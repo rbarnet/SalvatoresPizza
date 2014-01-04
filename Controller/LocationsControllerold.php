@@ -21,25 +21,10 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function index() {
-            $this->layout = 'customer';
 		$this->Location->recursive = 0;
 		$this->set('locations', $this->Paginator->paginate());
 	}
 
-        public function m_locations(){
-            $this->layout = 'customer';
-            $this->Location->recursive = 0;
-		
-            $locations = $this->Location->find('all');
-            echo json_encode($locations);
-                exit;
-        }
-        
-        public function mobile_locations(){
-            $this->layout = 'customermobile';
-            $this->Location->recursive = 0;
-	    $this->set('locations', $this->Paginator->paginate());
-        }
 /**
  * view method
  *
@@ -61,11 +46,10 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function add() {
-            $this->layout = 'customer';
 		if ($this->request->is('post')) {
 			$this->Location->create();
 			if ($this->Location->save($this->request->data)) {
-				$this->Session->setFlash(__('The location has been saved'));
+				$this->Session->setFlash(__('The location has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The location could not be saved. Please, try again.'));
@@ -81,13 +65,12 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-            $this->layout = 'customer';
 		if (!$this->Location->exists($id)) {
 			throw new NotFoundException(__('Invalid location'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Location->save($this->request->data)) {
-				$this->Session->setFlash(__('The location has been saved'));
+				$this->Session->setFlash(__('The location has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The location could not be saved. Please, try again.'));
@@ -106,17 +89,15 @@ class LocationsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-            $this->layout = 'customer';
 		$this->Location->id = $id;
 		if (!$this->Location->exists()) {
 			throw new NotFoundException(__('Invalid location'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Location->delete()) {
-			$this->Session->setFlash(__('Location deleted'));
-			return $this->redirect(array('action' => 'index'));
+			$this->Session->setFlash(__('The location has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The location could not be deleted. Please, try again.'));
 		}
-		$this->Session->setFlash(__('Location was not deleted'));
 		return $this->redirect(array('action' => 'index'));
-	}
-}
+	}}

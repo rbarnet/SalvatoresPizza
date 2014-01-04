@@ -49,7 +49,7 @@ class OrdersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Order->create();
 			if ($this->Order->save($this->request->data)) {
-				$this->Session->setFlash(__('The order has been saved'));
+				$this->Session->setFlash(__('The order has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The order could not be saved. Please, try again.'));
@@ -57,7 +57,8 @@ class OrdersController extends AppController {
 		}
 		$users = $this->Order->User->find('list');
 		$locations = $this->Order->Location->find('list');
-		$this->set(compact('users', 'locations'));
+		$stages = $this->Order->Stage->find('list');
+		$this->set(compact('users', 'locations', 'stages'));
 	}
 
 /**
@@ -73,7 +74,7 @@ class OrdersController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Order->save($this->request->data)) {
-				$this->Session->setFlash(__('The order has been saved'));
+				$this->Session->setFlash(__('The order has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The order could not be saved. Please, try again.'));
@@ -84,7 +85,8 @@ class OrdersController extends AppController {
 		}
 		$users = $this->Order->User->find('list');
 		$locations = $this->Order->Location->find('list');
-		$this->set(compact('users', 'locations'));
+		$stages = $this->Order->Stage->find('list');
+		$this->set(compact('users', 'locations', 'stages'));
 	}
 
 /**
@@ -101,10 +103,9 @@ class OrdersController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Order->delete()) {
-			$this->Session->setFlash(__('Order deleted'));
-			return $this->redirect(array('action' => 'index'));
+			$this->Session->setFlash(__('The order has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The order could not be deleted. Please, try again.'));
 		}
-		$this->Session->setFlash(__('Order was not deleted'));
 		return $this->redirect(array('action' => 'index'));
-	}
-}
+	}}

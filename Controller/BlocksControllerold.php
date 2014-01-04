@@ -39,20 +39,6 @@ class BlocksController extends AppController {
 		$options = array('conditions' => array('Block.' . $this->Block->primaryKey => $id));
 		$this->set('block', $this->Block->find('first', $options));
 	}
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function aboutUs($id = null) {
-		if (!$this->Block->exists($id)) {
-			throw new NotFoundException(__('Invalid block'));
-		}
-		$options = array('conditions' => array('Block.' . $this->Block->primaryKey => $id));
-		$this->set('block', $this->Block->find('first', $options));
-	}
 
 /**
  * add method
@@ -63,7 +49,7 @@ class BlocksController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Block->create();
 			if ($this->Block->save($this->request->data)) {
-				$this->Session->setFlash(__('The block has been saved'));
+				$this->Session->setFlash(__('The block has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The block could not be saved. Please, try again.'));
@@ -84,7 +70,7 @@ class BlocksController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Block->save($this->request->data)) {
-				$this->Session->setFlash(__('The block has been saved'));
+				$this->Session->setFlash(__('The block has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The block could not be saved. Please, try again.'));
@@ -109,10 +95,9 @@ class BlocksController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Block->delete()) {
-			$this->Session->setFlash(__('Block deleted'));
-			return $this->redirect(array('action' => 'index'));
+			$this->Session->setFlash(__('The block has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The block could not be deleted. Please, try again.'));
 		}
-		$this->Session->setFlash(__('Block was not deleted'));
 		return $this->redirect(array('action' => 'index'));
-	}
-}
+	}}
