@@ -106,3 +106,33 @@ Stack Trace:
 #6 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2014-01-04 22:50:01 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Pages\reviews.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Pages\\reviews.ctp',
+)
+Request URL: /SalvatoresPizza/reviews
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName('reviews')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render('reviews', NULL)
+#2 F:\xampp\htdocs\SalvatoresPizza\Controller\PagesController.php(63): Controller->render('reviews')
+#3 [internal function]: PagesController->display('reviews')
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-04 22:50:05 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Pages\reviews.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Pages\\reviews.ctp',
+)
+Request URL: /SalvatoresPizza/reviews
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName('reviews')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render('reviews', NULL)
+#2 F:\xampp\htdocs\SalvatoresPizza\Controller\PagesController.php(63): Controller->render('reviews')
+#3 [internal function]: PagesController->display('reviews')
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
