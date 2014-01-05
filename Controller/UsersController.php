@@ -14,6 +14,16 @@ class UsersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+        
+        public function beforeFilter() {
+    parent::beforeFilter();
+
+    // For CakePHP 2.0
+    //$this->Auth->allow('*');
+
+    // For CakePHP 2.1 and up
+    $this->Auth->allow();
+}
 
 /**
  * index method
@@ -137,19 +147,28 @@ class UsersController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
         
+//        public function login() {
+//            $this->layout = 'customer';
+//            if ($this->request->is('post')) {
+//                $users = $this->User->find('all', array('conditions' => array("username='{$this->request->data['User']['username']}'", "password='{$this->request->data['User']['password']}'")));
+//                if (count($users) > 0) {
+//                    $this->Session->setFlash('valid username password: you are in!');
+//                    $this->Session->write('username',$this->request->data['User']['username']);
+//                    $this->Session->write('userid',$users[0]['User']['id']);
+//                    $this->set('currentUser',$this->request->data['User']['username']);
+//                    $this->redirect(array('controller'=>'inventories','action'=>'shop'));
+//                } else {
+//                    $this->Session->setFlash('invalid, try again');
+//                }
+//            }
+//        }
+        
         public function login() {
-            $this->layout = 'customer';
-            if ($this->request->is('post')) {
-                $users = $this->User->find('all', array('conditions' => array("username='{$this->request->data['User']['username']}'", "password='{$this->request->data['User']['password']}'")));
-                if (count($users) > 0) {
-                    $this->Session->setFlash('valid username password: you are in!');
-                    $this->Session->write('username',$this->request->data['User']['username']);
-                    $this->Session->write('userid',$users[0]['User']['id']);
-                    $this->set('currentUser',$this->request->data['User']['username']);
-                    $this->redirect(array('controller'=>'inventories','action'=>'shop'));
-                } else {
-                    $this->Session->setFlash('invalid, try again');
-                }
-            }
+    if ($this->request->is('post')) {
+        if ($this->Auth->login()) {
+            return $this->redirect($this->Auth->redirect());
         }
+        $this->Session->setFlash(__('Your username or password was incorrect.'));
+    }
+}
 }

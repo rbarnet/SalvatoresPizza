@@ -36,7 +36,31 @@ class AppController extends Controller {
     
     var $menuCategories;
     
+     public $components = array(
+        'Acl',
+        'Auth' => array(
+            'authorize' => array(
+                'Actions' => array('actionPath' => 'controllers')
+            )
+        ),
+        'Session'
+    );
+     
+    public $helpers = array('Html', 'Form', 'Session');
+    
     public function beforeFilter() {
+        $this->Auth->loginAction = array(
+          'controller' => 'users',
+          'action' => 'login'
+        );
+        $this->Auth->logoutRedirect = array(
+          'controller' => 'users',
+          'action' => 'login'
+        );
+        $this->Auth->loginRedirect = array(
+          'controller' => 'menucategories',
+          'action' => 'menu'
+        );
         $this->loadModel('MenuCategory');
         $this->MenuCategory->recursive = 0;
         $this->menuCategories = $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id IS NULL'),'order'=>array('MenuCategory.order')));
