@@ -1,7 +1,7 @@
 <div class="locations index">
 	<h2><?php echo __('Locations'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
-	<tr>
+<!--	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('title'); ?></th>
 			<th><?php echo $this->Paginator->sort('addr1'); ?></th>
@@ -10,22 +10,24 @@
 			<th><?php echo $this->Paginator->sort('hourshtml'); ?></th>
 			<th><?php echo $this->Paginator->sort('googlemapcode'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
+	</tr>-->
 	<?php foreach ($locations as $location): ?>
-	<tr>
-		<td><?php echo h($location['Location']['id']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['title']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['addr1']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['addr2']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['phone']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['hourshtml']); ?>&nbsp;</td>
-		<td><?php echo h($location['Location']['googlemapcode']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $location['Location']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $location['Location']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $location['Location']['id']), null, __('Are you sure you want to delete # %s?', $location['Location']['id'])); ?>
-		</td>
-	</tr>
+	
+		
+		<h3><?php echo h($location['Location']['title']); ?>&nbsp;</h3>
+                <p><?php echo "<b> </b>"; ?> </p>
+		<p><?php echo h($location['Location']['addr1']); ?>&nbsp;</p>
+                <p><?php echo "<b> </b>"; ?> </p>
+		<p><?php echo h($location['Location']['addr2']); ?>&nbsp;</p>
+                <p><?php echo "<b> </b>"; ?> </p>
+		<p><?php echo h($location['Location']['phone']); ?>&nbsp;</p>
+                <p><?php echo "<b> </b>"; ?> </p>
+		<p><?php echo h($location['Location']['hourshtml']); ?>&nbsp;</p>
+                <p><?php echo "<b> </b>"; ?> </p>
+		<p><?php echo "<img src = \" " .($location['Location']['googlemapcode']) . "\" > </img>"; ?>&nbsp;</p>
+                <p><?php echo "<b> </b>"; ?> </p>
+		
+	
 <?php endforeach; ?>
 	</table>
 	<p>
@@ -42,11 +44,4 @@
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Location'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Orders'), array('controller' => 'orders', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Order'), array('controller' => 'orders', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+

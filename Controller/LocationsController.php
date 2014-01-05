@@ -25,6 +25,12 @@ class LocationsController extends AppController {
 		$this->Location->recursive = 0;
 		$this->set('locations', $this->Paginator->paginate());
 	}
+        
+        public function indexbackoffice() {
+            $this->layout = 'customer';
+		$this->Location->recursive = 0;
+		$this->set('locations', $this->Paginator->paginate());
+	}
 
         public function m_locations(){
             $this->layout = 'customer';
