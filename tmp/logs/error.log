@@ -160,3 +160,14 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-05 23:35:41 Error: [MissingActionException] Action UsersController::addbackoffice() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'addbackoffice',
+)
+Request URL: /SalvatoresPizza/users/addbackoffice
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
