@@ -148,3 +148,15 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-05 23:26:44 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Users\\login.ctp',
+)
+Request URL: /SalvatoresPizza/users/login
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
