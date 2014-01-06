@@ -40,7 +40,11 @@ class AppController extends Controller {
         'Acl',
         'Auth' => array(
             'authorize' => array(
-                'Actions' => array('actionPath' => 'controllers')
+                'Actions' => array('actionPath' => 'controllers')),
+                'authenticate' => array(
+            'Form' => array(
+                'fields' => array('username' => 'email')
+            )
             )
         ),
         'Session'
@@ -61,6 +65,10 @@ class AppController extends Controller {
           'controller' => 'menucategories',
           'action' => 'menu'
         );
+        $this->loadModel('User');
+        $group = $this->User->Group;
+        $group->id = 2;
+        $this->Acl->allow($group, 'controllers');
         $this->loadModel('MenuCategory');
         $this->MenuCategory->recursive = 0;
         $this->menuCategories = $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id IS NULL'),'order'=>array('MenuCategory.order')));

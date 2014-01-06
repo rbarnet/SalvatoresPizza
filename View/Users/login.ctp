@@ -1,17 +1,16 @@
 <div class="users form">
-<?php echo $this->Form->create('Login'); ?>
-	<fieldset>
-		
-	<?php
-		echo $this->Form->create('User', array('action' => 'login'));
-echo $this->Form->inputs(array(
-    'legend' => __('Login'),
-    'username',
-    'password'
+	<h2>Login</h2>
+<?php
+echo $this->Form->create('User', array(
+    'url' => array(
+        'controller' => 'users',
+        'action' => 'login'
+    )
 ));
-echo $this->Form->end('Login')
-	?>
-	</fieldset>
+echo $this->Form->input('User.email');
+echo $this->Form->input('User.password');
+echo $this->Form->end('Login');
+?>
 
 </div>
 <!--<?php echo $this->element('menu'); ?>-->
