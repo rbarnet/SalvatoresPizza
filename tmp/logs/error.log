@@ -171,3 +171,28 @@ Stack Trace:
 #1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-06 06:23:51 Error: [MissingPluginException] Plugin AclExtras could not be found.
+Exception Attributes: array (
+  'plugin' => 'AclExtras',
+)
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Config\bootstrap.php(82): CakePlugin::load('AclExtras')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Core\Configure.php(92): include('F:\xampp\htdocs...')
+#2 C:\cake\cakephp-2.4.0\lib\Cake\bootstrap.php(177): Configure::bootstrap(true)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Console\ShellDispatcher.php(138): require('C:\cake\cakephp...')
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Console\ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Console\ShellDispatcher.php(56): ShellDispatcher->_initEnvironment()
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Console\ShellDispatcher.php(67): ShellDispatcher->__construct(Array)
+#7 C:\cake\cakephp-2.4.0\app\Console\cake.php(37): ShellDispatcher::run(Array)
+#8 {main}
+2014-01-06 06:52:02 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /SalvatoresPizza/users/home
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -61,7 +61,7 @@ class UsersController extends AppController {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
-				return $this->redirect(array('action' => 'home'));
+				return $this->redirect(array('controller' => 'menucategories','action' => 'menu'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
@@ -164,6 +164,7 @@ class UsersController extends AppController {
 //        }
         
         public function login() {
+            $this->layout = "customer";
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {
             return $this->redirect($this->Auth->redirect());

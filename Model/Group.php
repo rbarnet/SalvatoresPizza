@@ -11,7 +11,7 @@ class Group extends AppModel {
  * Validation rules
  *
  * @var array
- */
+ */     
 	public $validate = array(
 		'title' => array(
 			'notempty' => array(
@@ -47,5 +47,11 @@ class Group extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+        
+        public $actsAs = array('Acl' => array('type' => 'requester'));
+
+    public function parentNode() {
+        return null;
+    }
 
 }

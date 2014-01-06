@@ -79,6 +79,8 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+CakePlugin::load('AclExtras');
+
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'

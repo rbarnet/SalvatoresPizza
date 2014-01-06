@@ -16,6 +16,16 @@ class MenuCategoriesController extends AppController {
      * @var array
      */
     public $components = array('Paginator');
+    
+     public function beforeFilter() {
+    parent::beforeFilter();
+
+    // For CakePHP 2.0
+    //$this->Auth->allow('*');
+
+    // For CakePHP 2.1 and up
+    $this->Auth->allow();
+}
 
     public function home() {
         $this->layout = 'customer';
@@ -23,6 +33,7 @@ class MenuCategoriesController extends AppController {
 
     public function menu($category_id = null) {
         $this->layout = 'customer';
+       
         if ($category_id == null)
             return $this->redirect(array('action' => 'home'));
         $category = $this->MenuCategory->read(null, $category_id);
