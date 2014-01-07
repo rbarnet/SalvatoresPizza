@@ -24,7 +24,7 @@ class MenuCategoriesController extends AppController {
     //$this->Auth->allow('*');
 
     // For CakePHP 2.1 and up
-    $this->Auth->allow('home', 'menu', 'index');
+    $this->Auth->allow('home', 'menu', 'index', 'mobile_menu');
 }
 
     public function home() {

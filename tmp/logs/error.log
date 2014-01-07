@@ -323,3 +323,25 @@ Stack Trace:
 #1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
 #2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-06 23:35:09 Error: [MissingActionException] Action MenuCategoriesController::orders() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuCategoriesController',
+  'action' => 'orders',
+)
+Request URL: /SalvatoresPizza/menucategories/orders/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-07 04:14:22 Error: [MissingActionException] Action MenuItemsController::entrees() could not be found.
+Exception Attributes: array (
+  'controller' => 'MenuItemsController',
+  'action' => 'entrees',
+)
+Request URL: /SalvatoresPizza/menuitems/entrees
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
