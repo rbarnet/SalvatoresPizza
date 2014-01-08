@@ -345,3 +345,117 @@ Stack Trace:
 #1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuItemsController), Object(CakeRequest), Object(CakeResponse))
 #2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-08 00:32:40 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\OrderDetails\addtocart.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\OrderDetails\\addtocart.ctp',
+)
+Request URL: /SalvatoresPizza/orderdetails/addtocart/6
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-08 00:51:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Order.user' in 'where clause'
+Request URL: /SalvatoresPizza/orderdetails/addtocart/13
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Order`....', Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Order`....', Array, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Order`....', false)
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Order), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(36): Model->find('all', Array)
+#7 [internal function]: OrderDetailsController->addtocart('13')
+#8 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#9 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#11 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-08 00:56:19 Error: Fatal Error (1): Function name must be a string in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 37]
+2014-01-08 00:56:19 Error: [FatalErrorException] Function name must be a string
+Request URL: /SalvatoresPizza/orderdetails/addtocart/13
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'F:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'F:\xampp\htdocs...', 37, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'F:\xampp\htdocs...', 37, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-08 04:39:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /SalvatoresPizza/orderdetails/addtocart/13
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `MenuIte...', Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `MenuIte...', Array, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `MenuIte...', false)
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2750): DboSource->read(Object(MenuItem), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(48): Model->find('all', Array)
+#7 [internal function]: OrderDetailsController->addtocart('13')
+#8 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#9 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#11 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-08 05:03:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`salvatoresdata`.`orders`, CONSTRAINT `fk_orders_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /SalvatoresPizza/orderdetails/addtocart/13
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `sa...', Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `sa...')
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(1761): DboSource->create(Object(Order), Array, Array)
+#4 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(47): Model->save()
+#5 [internal function]: OrderDetailsController->addtocart('13')
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#7 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#9 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-08 05:05:53 Error: [MissingControllerException] Controller class OrdesController could not be found.
+Exception Attributes: array (
+  'class' => 'OrdesController',
+  'plugin' => NULL,
+)
+Request URL: /SalvatoresPizza/ordes
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-08 06:42:01 Error: Fatal Error (1): Unsupported operand types in [C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php, line 848]
+2014-01-08 06:42:01 Error: [FatalErrorException] Unsupported operand types
+Request URL: /SalvatoresPizza/calzones
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-08 07:06:57 Error: [NotFoundException] Invalid order
+Request URL: /SalvatoresPizza/orders/delete/13
+Stack Trace:
+#0 [internal function]: OrdersController->delete('13')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-08 07:26:05 Error: [NotFoundException] Invalid order
+Request URL: /SalvatoresPizza/orders/delete/16
+Stack Trace:
+#0 [internal function]: OrdersController->delete('16')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-08 07:26:18 Error: [NotFoundException] Invalid order
+Request URL: /SalvatoresPizza/orders/delete
+Stack Trace:
+#0 [internal function]: OrdersController->delete()
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

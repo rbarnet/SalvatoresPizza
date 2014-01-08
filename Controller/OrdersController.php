@@ -57,7 +57,8 @@ class OrdersController extends AppController {
 		}
 		$users = $this->Order->User->find('list');
 		$locations = $this->Order->Location->find('list');
-		$this->set(compact('users', 'locations'));
+                $stages = $this->Order->Stage->find('list', array('fields' => array('description')));
+		$this->set(compact('users', 'locations', 'stages'));
 	}
 
 /**

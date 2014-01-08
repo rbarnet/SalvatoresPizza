@@ -42,6 +42,7 @@ class MenuCategoriesController extends AppController {
         if ($menuItems) {
             // this means there ARE items for this category (ignore sub-categories ... should not exist)
             $this->set(compact('menuItems'));
+            
         } else {
             $subCategories = $this->MenuCategory->find('all', array('conditions' => array('MenuCategory.parent_id=' . $category_id)));
             $this->set(compact('subCategories'));
