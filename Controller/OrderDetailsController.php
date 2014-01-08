@@ -26,69 +26,51 @@ class OrderDetailsController extends AppController {
 	}
         
         public function addtocart($id = null, $location = null){
-            
-      //if ($this->request->is('post')) {
         if ($this->Session->read('Auth.User')) {
-        $this->loadModel('Order');
-        $this->loadModel('MenuItem');
-        $userid = $this->Auth->user('id');
-        $usersorders = $this->Order->find('all', array(
-        'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
-    ));
-        //echo json_encode($usersorders);
-                //exit;
-        if(empty($usersorders)){
-        
-        $this->Order->set('user_id', $userid);
-        $date = date('Y-m-d H:i:s');
-        $count = $this->Order->find('count');
-        $count = $count + 1;
-        $this->Order->create();
-        $menuitem = $this->MenuItem->find('all', array('conditions' => array('MenuItem.id' => $id)));
-        //$this->Order->set('user_id', $id);
-        //$this->OrderDetail->Order->set('id',$count);
-        $this->Order->set(array('location_id' => $location,
-            'stage_id' => 1,
-            'orderdate' => $date,
-            'total' => $menuitem[0]['MenuItem']['price'],
-            'paid' => $menuitem[0]['MenuItem']['price'],
-            'user_id' =>$userid,
+            $this->loadModel('Order');
+            $this->loadModel('MenuItem');
+            $userid = $this->Auth->user('id');
+            $usersorders = $this->Order->find('all', array(
+            'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
             ));
-//        $this->Order->set('stage_id', 1);
-//        $this->Order->set('orderdate', $date);
-       $menuitem = $this->MenuItem->find('all', array('conditions' => array('MenuItem.id' => $id)));
-//        $this->Order->set('total', $menuitem[0]['MenuItem']['price']);
-//        $this->Order->set('paid', $menuitem[0]['MenuItem']['price'] );
-//        $this->Order->set('user_id', $userid);
-        
-        $this->Order->save();
-        $orderid = $this->Order->getInsertID();
-//        $this->OrderDetail->Order->set('id',$count);
-//        $this->OrderDetail->Order->set('location_id', $location);
-//        $this->OrderDetail->Order->set('stage_id', 1);
-//        $this->OrderDetail->Order->set('orderdate', $date);
-//        $this->OrderDetail->MenuItem->id = $id;
-//        $menuitem = $this->MenuItem->find('all', array('conditions' => array('MenuItem.id' => $id)));
-//        $this->OrderDetail->Order->set('total', $menuitem[0]['MenuItem']['price']);
-//        $this->OrderDetail->Order->set('paid', $menuitem[0]['MenuItem']['price'] );
-//        $this->OrderDetail->Order->set('user_id', $userid);
-         $this->OrderDetail->save();
-         $this->Session->setFlash("Successfully added to cart order id is " . $orderid);
-         return $this->redirect($this->redirect($this->referer()));
+        $menuitem = $this->MenuItem->find('all', array('conditions' => array('MenuItem.id' => $id)));
+        if(empty($usersorders)){
+            $this->Order->set('user_id', $userid);
+            $date = date('Y-m-d H:i:s');
+            $count = $this->Order->find('count');
+            $count = $count + 1;
+            $this->Order->create();
+            $menuitem = $this->MenuItem->find('all', array('conditions' => array('MenuItem.id' => $id)));
+            $this->Order->set(array('location_id' => $location,
+                'stage_id' => 1,
+                'orderdate' => $date,
+                'total' => $menuitem[0]['MenuItem']['price'],
+                'paid' => $menuitem[0]['MenuItem']['price'],
+                'user_id' =>$userid,
+                ));
+            $this->Order->save();
+            $orderid = $this->Order->getInsertID();
+            $this->OrderDetail->create();
+            $this->OrderDetail->set(array('order_id' => $orderid,
+            'menu_item_id' => $id,
+            'price' => $menuitem[0]['MenuItem']['price']));
+           $this->OrderDetail->save(); 
+           $this->Session->setFlash("Successfully added to cart");
+           return $this->redirect($this->redirect($this->referer()));
         }
-        else{echo "It's not empty";}
-        exit;
-       
-        $this->Session->setFlash(__('Your authuser is' . $authuser));
-        return $this->redirect('/');
+        else{
+        $this->OrderDetail->create();
+        $this->OrderDetail->set(array('order_id' => $usersorders[0]['Order']['id'],
+            'menu_item_id' => $id,
+            'price' => $menuitem[0]['MenuItem']['price']));
+        $this->OrderDetail->save(); 
+        $this->Session->setFlash("Successfully added to cart");
+        return $this->redirect($this->redirect($this->referer()));
+        }
     }
-        if ($this->Auth->login()) {
-            $this->Session->setFlash('You have been successfully logged in');
-            return $this->redirect($this->Auth->redirect());
-        }
-        
-        $this->Session->setFlash(__('Your email or password was incorrect.'));
-    //}
+        $this->Session->setFlash(__('You must be logged in to use this function.'));
+        $this->redirect(array('controller' => 'user', 'action' => 'login'));
+   
         }
 
 /**
