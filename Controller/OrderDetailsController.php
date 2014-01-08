@@ -72,7 +72,23 @@ class OrderDetailsController extends AppController {
         $this->redirect(array('controller' => 'user', 'action' => 'login'));
    
         }
-
+        
+        public function viewcart($location = null){
+            $this->layout = 'customer';
+            $userid = $this->Auth->user('id');
+            $this->loadModel('Order');
+            $usersorders = $this->Order->find('all', array(
+            'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
+            ));
+            $count = 0;
+            
+            $orderDetails = $this->OrderDetail->find('all', array(
+            'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
+            ));
+            
+            $this->set('orderDetails');
+            $this->set('orderDetails', $orderDetails);
+        }
 /**
  * view method
  *
@@ -150,9 +166,9 @@ class OrderDetailsController extends AppController {
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->OrderDetail->delete()) {
 			$this->Session->setFlash(__('Order detail deleted'));
-			return $this->redirect(array('action' => 'index'));
+			return $this->redirect($this->referer());
 		}
 		$this->Session->setFlash(__('Order detail was not deleted'));
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect($this->referer());
 	}
 }

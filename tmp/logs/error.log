@@ -459,3 +459,166 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-08 19:16:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 78]
+2014-01-08 19:16:55 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\xampp\htdocs...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\xampp\htdocs...', 78, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\xampp\htdocs...', 78, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-08 19:17:33 Error: [MissingModelException] Model Array could not be found.
+Exception Attributes: array (
+  0 => 
+  array (
+    'OrderDetail' => 
+    array (
+      'id' => '1',
+      'order_id' => '20',
+      'menu_item_id' => '153',
+      'price' => '3',
+    ),
+    'Order' => 
+    array (
+      'id' => '20',
+      'user_id' => '3',
+      'location_id' => '1',
+      'orderdate' => '2014-01-08 18:18:17',
+      'stage_id' => '1',
+      'total' => '3',
+      'paid' => '3',
+    ),
+    'MenuItem' => 
+    array (
+      'id' => '153',
+      'menu_category_id' => '28',
+      'order' => '1',
+      'title' => 'Cheese',
+      'tagline' => '',
+      'price' => '3',
+      'dateforspecial' => '2014-01-07 05:30:00',
+    ),
+    'OrderDetailTopping' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'OrderDetail' => 
+    array (
+      'id' => '3',
+      'order_id' => '20',
+      'menu_item_id' => '26',
+      'price' => '4.95',
+    ),
+    'Order' => 
+    array (
+      'id' => '20',
+      'user_id' => '3',
+      'location_id' => '1',
+      'orderdate' => '2014-01-08 18:18:17',
+      'stage_id' => '1',
+      'total' => '3',
+      'paid' => '3',
+    ),
+    'MenuItem' => 
+    array (
+      'id' => '26',
+      'menu_category_id' => '8',
+      'order' => '5',
+      'title' => 'White Chocolate Bread Pudding',
+      'tagline' => '',
+      'price' => '4.95',
+      'dateforspecial' => '2014-01-06 23:57:00',
+    ),
+    'OrderDetailTopping' => 
+    array (
+    ),
+  ),
+  2 => 
+  array (
+    'OrderDetail' => 
+    array (
+      'id' => '4',
+      'order_id' => '20',
+      'menu_item_id' => '22',
+      'price' => '4.95',
+    ),
+    'Order' => 
+    array (
+      'id' => '20',
+      'user_id' => '3',
+      'location_id' => '1',
+      'orderdate' => '2014-01-08 18:18:17',
+      'stage_id' => '1',
+      'total' => '3',
+      'paid' => '3',
+    ),
+    'MenuItem' => 
+    array (
+      'id' => '22',
+      'menu_category_id' => '8',
+      'order' => '2',
+      'title' => 'Double Chocolate Mousse Cake',
+      'tagline' => '',
+      'price' => '4.95',
+      'dateforspecial' => '2014-01-06 23:54:00',
+    ),
+    'OrderDetailTopping' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'OrderDetail' => 
+    array (
+      'id' => '6',
+      'order_id' => '20',
+      'menu_item_id' => '68',
+      'price' => '8.25',
+    ),
+    'Order' => 
+    array (
+      'id' => '20',
+      'user_id' => '3',
+      'location_id' => '1',
+      'orderdate' => '2014-01-08 18:18:17',
+      'stage_id' => '1',
+      'total' => '3',
+      'paid' => '3',
+    ),
+    'MenuItem' => 
+    array (
+      'id' => '68',
+      'menu_category_id' => '15',
+      'order' => '4',
+      'title' => 'Baked Ziti with Mozzarella,Ricotta & Parmesa',
+      'tagline' => '',
+      'price' => '8.25',
+      'dateforspecial' => '2014-01-07 03:44:00',
+    ),
+    'OrderDetailTopping' => 
+    array (
+    ),
+  ),
+)
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(88): PaginatorComponent->paginate()
+#1 [internal function]: OrderDetailsController->viewcart('1')
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-08 20:00:00 Error: [NotFoundException] Invalid order detail
+Request URL: /SalvatoresPizza/orderdetails/delete/7
+Stack Trace:
+#0 [internal function]: OrderDetailsController->delete('7')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

@@ -67,8 +67,15 @@ class AppController extends Controller {
         );
         $this->loadModel('User');
         $group = $this->User->Group;
+        //allow admins access to everything
         $group->id = 2;
         $this->Acl->allow($group, 'controllers');
+        $group->id = 5;
+        //allow users the ability to add to cart and view cart and logout and remove items from cart
+        $this->Acl->allow($group, 'controllers/OrderDetails/addtocart');
+        $this->Acl->allow($group, 'controllers/OrderDetails/viewcart');
+        $this->Acl->allow($group, 'controllers/OrderDetails/delete');
+        $this->Acl->allow($group, 'controllers/Users/logout');
         $this->loadModel('MenuCategory');
         $this->MenuCategory->recursive = 0;
         $this->menuCategories = $this->MenuCategory->find('all',array('conditions'=>array('MenuCategory.parent_id IS NULL'),'order'=>array('MenuCategory.order')));
