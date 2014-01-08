@@ -622,3 +622,13 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-09 00:00:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 88]
+2014-01-09 00:00:18 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\xampp\htdocs...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\xampp\htdocs...', 88, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\xampp\htdocs...', 88, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

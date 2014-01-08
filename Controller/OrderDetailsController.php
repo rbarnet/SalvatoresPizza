@@ -77,6 +77,7 @@ class OrderDetailsController extends AppController {
             $this->layout = 'customer';
             $userid = $this->Auth->user('id');
             $this->loadModel('Order');
+            $this->loadModel('Location');
             $usersorders = $this->Order->find('all', array(
             'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
             ));
@@ -85,9 +86,11 @@ class OrderDetailsController extends AppController {
             $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
             ));
-            
+            $locations = $this->Location->find('all', array(
+            'conditions' => array('id' => $location)));
             $this->set('orderDetails');
             $this->set('orderDetails', $orderDetails);
+            $this->set('locationtitle', $locations[0]['Location']['title']);
         }
 /**
  * view method

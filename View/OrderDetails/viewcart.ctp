@@ -1,5 +1,5 @@
 <div class="orderDetails index">
-	<h2><?php echo __('Order Details'); ?></h2>
+	<h2><?php echo __('Your Cart for '. $locationtitle); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo ('Menu Item   '); ?></th>
