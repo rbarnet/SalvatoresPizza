@@ -18,8 +18,10 @@
 			<?php echo $this->Form->postLink(__('Remove from Cart'), array('action' => 'delete', $orderDetail['OrderDetail']['id']), null, __('Are you sure you want to remove this item from your cart?', $orderDetail['OrderDetail']['id'])); ?>
 		</td>
 	</tr>
-<?php endforeach; ?>
+<?php endforeach; 
+?>
 	</table>
-	
+        <br></br>
+	<?php echo("Total: $". $ordertotal);?>
 </div>
 

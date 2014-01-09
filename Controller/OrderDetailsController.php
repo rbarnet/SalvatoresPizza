@@ -63,6 +63,12 @@ class OrderDetailsController extends AppController {
         $this->OrderDetail->set(array('order_id' => $usersorders[0]['Order']['id'],
             'menu_item_id' => $id,
             'price' => $menuitem[0]['MenuItem']['price']));
+        $usersorders[0]['Order']['total'] = $usersorders[0]['Order']['total'] + $menuitem[0]['MenuItem']['price'];
+        $this->Order->read(null, $usersorders[0]['Order']['id']);
+        $this->Order->set('total', $usersorders[0]['Order']['total']);
+        $this->Order->set('paid', $usersorders[0]['Order']['total']);
+        $this->Order->save();
+        //Update price
         $this->OrderDetail->save(); 
         $this->Session->setFlash("Successfully added to cart");
         return $this->redirect($this->redirect($this->referer()));
@@ -91,6 +97,7 @@ class OrderDetailsController extends AppController {
             $this->set('orderDetails');
             $this->set('orderDetails', $orderDetails);
             $this->set('locationtitle', $locations[0]['Location']['title']);
+            $this->set('ordertotal', $usersorders[0]['Order']['total']);
         }
 /**
  * view method
