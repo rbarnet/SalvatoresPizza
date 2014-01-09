@@ -632,3 +632,37 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-09 00:16:26 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /SalvatoresPizza/users/login
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(818): HelperCollection->__isset('Auth')
+#2 F:\xampp\htdocs\SalvatoresPizza\View\Elements\loginButtons.ctp(16): View->__get('Auth')
+#3 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(929): include('F:\xampp\htdocs...')
+#4 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(891): View->_evaluate('F:\xampp\htdocs...', Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(1189): View->_render('F:\xampp\htdocs...', Array)
+#6 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(408): View->_renderElement('F:\xampp\htdocs...', Array, Array)
+#7 F:\xampp\htdocs\SalvatoresPizza\View\Layouts\customer.ctp(28): View->element('loginButtons')
+#8 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(929): include('F:\xampp\htdocs...')
+#9 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(891): View->_evaluate('F:\xampp\htdocs...', Array)
+#10 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(523): View->_render('F:\xampp\htdocs...')
+#11 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(470): View->renderLayout('', 'customer')
+#12 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-09 00:26:23 Error: Fatal Error (1): Call to undefined method View::loadModel() in [F:\xampp\htdocs\SalvatoresPizza\View\Elements\loginButtons.ctp, line 12]
+2014-01-09 00:26:23 Error: [FatalErrorException] Call to undefined method View::loadModel()
+Request URL: /SalvatoresPizza/menucategories/home
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 12, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\xampp\htdocs...', 12, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -41,6 +41,13 @@ class MenuCategoriesController extends AppController {
         $menuItems = $this->MenuCategory->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id=' . $category_id)));
         if ($menuItems) {
             // this means there ARE items for this category (ignore sub-categories ... should not exist)
+            if($category_id == 29){
+                $date = "2014-05-10 00:00:00";//A daily special will be shown if it is added to the time of Zach's birthday.  I will change this later, but
+                //that might entail a database modification
+                $menuItems = $this->MenuCategory->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id=' . $category_id,
+                    'MenuItem.dateforspecial' => $date)));
+            }
+            
             $this->set(compact('menuItems'));
             
         } else {
@@ -58,6 +65,7 @@ class MenuCategoriesController extends AppController {
         $menuItems = $this->MenuCategory->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id=' . $category_id)));
         if ($menuItems) {
             // this means there ARE items for this category (ignore sub-categories ... should not exist)
+            
             $this->set(compact('menuItems'));
         } else {
             $subCategories = $this->MenuCategory->find('all', array('conditions' => array('MenuCategory.parent_id=' . $category_id)));

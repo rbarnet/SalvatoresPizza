@@ -60,7 +60,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash(__('User account successfully added.'));
 				return $this->redirect(array('controller' => 'menucategories','action' => 'menu'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -167,6 +167,7 @@ class UsersController extends AppController {
             $this->layout = "customer";
     if ($this->request->is('post')) {
         if ($this->Session->read('Auth.User')) {
+            
         $this->Session->setFlash('You are already logged in!');
         return $this->redirect('/');
     }
