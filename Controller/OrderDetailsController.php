@@ -174,6 +174,21 @@ class OrderDetailsController extends AppController {
 			throw new NotFoundException(__('Invalid order detail'));
 		}
 		$this->request->onlyAllow('post', 'delete');
+                $this->loadModel('Order');
+                $userorderdetail = $usersorders = $this->OrderDetail->find('all', array(
+            'conditions' => array('OrderDetail.id' => $id)
+            ));
+                $usersorders = $this->Order->find('all', array(
+            'conditions' => array('Order.id' => $userorderdetail[0]['OrderDetail']['order_id'])
+            ));
+                //update the total for the order...because once an order detail is removed the total must be updated
+                //paid is updated to because it is kept the same as total until tax is calculated in.
+                $newtotal = $usersorders[0]['Order']['total'] - $userorderdetail[0]['OrderDetail']['price'];
+                $this->Order->read(null, $usersorders[0]['Order']['id']);
+                $this->Order->set('total', $newtotal);
+                $this->Order->set('paid', $newtotal);
+                $this->Order->save();
+                
 		if ($this->OrderDetail->delete()) {
 			$this->Session->setFlash(__('Order detail deleted'));
 			return $this->redirect($this->referer());
