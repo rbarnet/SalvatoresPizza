@@ -1,5 +1,5 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('AppController', 'Controller', 'CakeEmail', 'Network/Email');
 /**
  * MenuItems Controller
  *
@@ -143,6 +143,7 @@ class MenuItemsController extends AppController {
 			$this->MenuItem->create();
 			if ($this->MenuItem->save($this->request->data)) {
 				$this->Session->setFlash(__('The menu item has been saved'));
+                                
 				return $this->redirect(array('action' => 'add'));
 			} else {
 				$this->Session->setFlash(__('The menu item could not be saved. Please, try again.'));

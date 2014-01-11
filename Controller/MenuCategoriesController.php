@@ -1,6 +1,6 @@
 <?php
 
-App::uses('AppController', 'Controller');
+App::uses('AppController', 'Controller', 'CakeEmail', 'Network/Email');
 
 /**
  * MenuCategories Controller
@@ -24,11 +24,32 @@ class MenuCategoriesController extends AppController {
     //$this->Auth->allow('*');
 
     // For CakePHP 2.1 and up
+    App::uses('CakeEmail', 'Network/Email');
     $this->Auth->allow('home', 'menu', 'index', 'mobile_menu', 'm_index');
 }
 
     public function home() {
         $this->layout = 'customer';
+    }
+    public function testemail(){
+        $to = "bob3000000@aol.com";
+$subject = "Daily Specials for Salvatores!";
+$body = "The daily special are: ";
+$this->loadModel('MenuItem');
+$menuItems = $this->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id' => 29, 'MenuItem.dateforspecial' => "2014-05-10 00:00:00")));
+$count = 0;
+while($count < count($menuItems)){
+    $body .= $menuItems[$count]['MenuItem']['title'] . " and the price is " . $menuItems[$count]['MenuItem']['price'] . ".\n";
+    $count++;
+}
+$headers = "From: bobbarnett60@gmail.com" . "\r\n";
+
+if (mail($to, $subject, $body, $headers)) {
+    $this->Session->setFlash(__('Message successfully sent'));
+} else {
+    echo ("Message delivery failed...");
+}
+return $this->redirect(array('action' => 'index'));
     }
 
     public function menu($category_id = null) {

@@ -686,3 +686,137 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-10 21:54:39 Error: Fatal Error (1): Class 'CakeEmail' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php, line 34]
+2014-01-10 21:54:39 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-10 21:56:15 Error: Fatal Error (1): Class 'CakeEmail' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php, line 34]
+2014-01-10 21:56:15 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', 'F:\xampp\htdocs...', 34, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-10 21:58:15 Error: [SocketException] From is not specified.
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php(38): CakeEmail->send('Email testing c...')
+#1 [internal function]: MenuCategoriesController->testemail()
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuCategoriesController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-10 21:59:39 Error: [ConfigureException] Unknown email configuration "email".
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Network\Email\CakeEmail.php(1088): CakeEmail->_applyConfig('email')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Network\Email\CakeEmail.php(345): CakeEmail->config('email')
+#2 F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php(35): CakeEmail->__construct('email')
+#3 [internal function]: MenuCategoriesController->testemail()
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuCategoriesController), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#7 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-10 22:00:03 Error: [ConfigureException] Unknown email configuration "email.php".
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Network\Email\CakeEmail.php(1088): CakeEmail->_applyConfig('email.php')
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Network\Email\CakeEmail.php(345): CakeEmail->config('email.php')
+#2 F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php(35): CakeEmail->__construct('email.php')
+#3 [internal function]: MenuCategoriesController->testemail()
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuCategoriesController), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#7 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-10 22:02:42 Error: [SocketException] From is not specified.
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php(38): CakeEmail->send('Email testing c...')
+#1 [internal function]: MenuCategoriesController->testemail()
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuCategoriesController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-10 22:03:56 Error: [SocketException] From is not specified.
+Request URL: /SalvatoresPizza/menucategories/testemail
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\MenuCategoriesController.php(38): CakeEmail->send('Email testing c...')
+#1 [internal function]: MenuCategoriesController->testemail()
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MenuCategoriesController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MenuCategoriesController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-11 06:27:28 Error: Fatal Error (1): Function name must be a string in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:27:28 Error: [FatalErrorException] Function name must be a string
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-11 06:28:07 Error: Fatal Error (1): Call to undefined method MenuItemsController::debug() in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:28:07 Error: [FatalErrorException] Call to undefined method MenuItemsController::debug()
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-11 06:31:13 Error: Fatal Error (1): Function name must be a string in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:31:13 Error: [FatalErrorException] Function name must be a string
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-11 06:33:37 Error: Fatal Error (1): Function name must be a string in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:33:37 Error: [FatalErrorException] Function name must be a string
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-11 06:34:19 Error: Fatal Error (1): Call to undefined method MenuItemsController::debug() in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:34:19 Error: [FatalErrorException] Call to undefined method MenuItemsController::debug()
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-11 06:34:51 Error: Fatal Error (1): Call to undefined method MenuItemsController::debug() in [F:\xampp\htdocs\SalvatoresPizza\Controller\MenuItemsController.php, line 146]
+2014-01-11 06:34:51 Error: [FatalErrorException] Call to undefined method MenuItemsController::debug()
+Request URL: /SalvatoresPizza/menuitems/add
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\xampp\htdocs...', 146, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
