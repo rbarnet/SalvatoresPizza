@@ -31,18 +31,33 @@ class MenuCategoriesController extends AppController {
     public function home() {
         $this->layout = 'customer';
     }
-    public function testemail(){
-        $to = "bob3000000@aol.com";
+    public function emailspecials(){
+        $to = "bobbarnett60@gmail.com";
 $subject = "Daily Specials for Salvatores!";
 $body = "The daily special are: ";
 $this->loadModel('MenuItem');
+$this->loadModel('User');
+$users = $this->User->find('all');
 $menuItems = $this->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id' => 29, 'MenuItem.dateforspecial' => "2014-05-10 00:00:00")));
 $count = 0;
 while($count < count($menuItems)){
     $body .= $menuItems[$count]['MenuItem']['title'] . " and the price is " . $menuItems[$count]['MenuItem']['price'] . ".\n";
     $count++;
 }
+$count = 0;
 $headers = "From: bobbarnett60@gmail.com" . "\r\n";
+$headers .="Bcc: ";
+while($count < count($users)){
+    if($count + 1 == count($users)){
+        $headers .= $users[$count]['User']['email'] . "\r\n ";
+    }
+    else{
+    $headers .= $users[$count]['User']['email'] . ", ";
+    }
+    $count++;
+}
+
+
 
 if (mail($to, $subject, $body, $headers)) {
     $this->Session->setFlash(__('Message successfully sent'));
