@@ -1,4 +1,5 @@
 <div class="orderDetails index">
+    <div class="actionscart">
 	<h2><?php echo __('Your Cart for '. $locationtitle); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
@@ -17,8 +18,8 @@
                 <td> <?php if($toppings[$count] != null){
                     ?></td>
                 
-		<td class="actions">
-                <?php echo $this->HTML->link(__('Add Topping'), array('action' => 'addtopping', $orderDetail['OrderDetail']['id']), null);} ?>
+		<td class="actionscart">
+                <?php echo $this->HTML->link(__('Add/Remove/View Toppings'), array('action' => 'addtopping', $orderDetail['OrderDetail']['id']), null);} ?>
 			<?php echo $this->HTML->link(__('Remove from Cart'), array('action' => 'deleteitemcustomer', $orderDetail['OrderDetail']['id']), null, __('Are you sure you want to remove this item from your cart?', $orderDetail['OrderDetail']['id'])); ?>
 		</td>
 	</tr>
@@ -27,5 +28,10 @@
 	</table>
         <br></br>
 	<?php echo("Total without Toppings: $". $ordertotal);?>
+        <?php echo("<br></br>")?>
+        <?php echo("Total of Toppings Selected: $". $toppingstotal);?>
+        <?php echo("<br></br>")?>
+        <?php echo("Projected Total without Tax: $" .$projectedtotal)?>
+    </div>
 </div>
 

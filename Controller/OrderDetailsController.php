@@ -95,9 +95,12 @@ class OrderDetailsController extends AppController {
             $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
             ));
-            
+            $toppingstotal = 0;
             while($count < count($orderDetails)){
-                
+                $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
+                foreach($toppingsonitem as $itemtoppings){
+                    $toppingstotal += $itemtoppings['OrderDetailTopping']['price'];
+                }
                 if($orderDetails[$count]['MenuItem']['title'] == 'Personal 10"'){
                     $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Personal 10"')));  
                 }
@@ -126,6 +129,9 @@ class OrderDetailsController extends AppController {
             $this->set('orderDetails', $orderDetails);
             $this->set('locationtitle', $locations[0]['Location']['title']);
             $this->set('ordertotal', $usersorders[0]['Order']['total']);
+            $this->set('toppingstotal', $toppingstotal);
+            $projectedtotal = $toppingstotal + $usersorders[0]['Order']['total'];
+            $this->set('projectedtotal', $projectedtotal);
         }
 /**
  * view method
