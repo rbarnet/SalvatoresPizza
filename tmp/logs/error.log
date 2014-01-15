@@ -820,3 +820,113 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-14 19:21:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Toppings.item' in 'where clause'
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Topping...', Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Topping...', Array, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Topping...', false)
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Topping), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2722): Model->_readDataSource('list', Array)
+#6 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(102): Model->find('list', Array)
+#7 [internal function]: OrderDetailsController->viewcart('1')
+#8 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#9 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#11 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-14 19:22:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Toppings.item' in 'where clause'
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Topping...', Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Topping...', Array, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Topping...', false)
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Topping), Array)
+#5 C:\cake\cakephp-2.4.0\lib\Cake\Model\Model.php(2722): Model->_readDataSource('list', Array)
+#6 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php(102): Model->find('list', Array)
+#7 [internal function]: OrderDetailsController->viewcart('1')
+#8 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailsController), Array)
+#9 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#11 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-14 19:23:24 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-01-14 19:23:24 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cake\cakephp...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cake\cakephp...', 460, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cake\cakephp...', 460, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-14 19:25:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-01-14 19:25:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cake\cakephp...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cake\cakephp...', 460, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cake\cakephp...', 460, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-14 19:50:03 Error: Fatal Error (1): Unsupported operand types in [C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php, line 848]
+2014-01-14 19:50:03 Error: [FatalErrorException] Unsupported operand types
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-14 20:05:47 Error: Fatal Error (1): Unsupported operand types in [C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php, line 848]
+2014-01-14 20:05:47 Error: [FatalErrorException] Unsupported operand types
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\cake\cakephp...', 848, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-15 06:14:53 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cake\cakephp-2.4.0\lib\Cake\Cache\Engine\FileEngine.php, line 343]
+2014-01-15 06:14:53 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /SalvatoresPizza/orderdetails/addtopping/23
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cake\cakephp...', 343)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cake\cakephp...', 343, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cake\cakephp...', 343, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-15 06:39:09 Error: [MissingControllerException] Controller class OrderdetailtoppingController could not be found.
+Exception Attributes: array (
+  'class' => 'OrderdetailtoppingController',
+  'plugin' => NULL,
+)
+Request URL: /SalvatoresPizza/orderdetailtopping
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-15 07:28:56 Error: [MissingControllerException] Controller class OrderDetailToppingController could not be found.
+Exception Attributes: array (
+  'class' => 'OrderDetailToppingController',
+  'plugin' => NULL,
+)
+Request URL: /SalvatoresPizza/OrderDetailTopping/delete/4
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-15 07:33:21 Error: Fatal Error (4): syntax error, unexpected ';' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 108]
+2014-01-15 07:33:21 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /SalvatoresPizza/OrderDetailToppings/delete/3
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 108)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 108, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\xampp\htdocs...', 108, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

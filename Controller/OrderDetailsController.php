@@ -84,6 +84,9 @@ class OrderDetailsController extends AppController {
             $userid = $this->Auth->user('id');
             $this->loadModel('Order');
             $this->loadModel('Location');
+            $this->loadModel('OrderDetailTopping');
+            $this->loadModel('MenuItem');
+            $this->loadModel('Topping');
             $usersorders = $this->Order->find('all', array(
             'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
             ));
@@ -92,6 +95,31 @@ class OrderDetailsController extends AppController {
             $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
             ));
+            
+            while($count < count($orderDetails)){
+                
+                if($orderDetails[$count]['MenuItem']['title'] == 'Personal 10"'){
+                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Personal 10"')));  
+                }
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Medium 14"'){
+                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Medium 14"')));
+                }
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Large 16"'){
+                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Large 16"')));
+                }
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Extra Large 18"'){
+                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Extra Large 18"')));
+                }
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Cheese'){
+                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Cheese')));
+                }
+                else{
+                    $toppings[$count] = null;
+                }
+                $count++;
+            }
+            $count = 0;
+            $this->set(compact('toppings'));
             $locations = $this->Location->find('all', array(
             'conditions' => array('id' => $location)));
             $this->set('orderDetails');
@@ -113,6 +141,34 @@ class OrderDetailsController extends AppController {
 		$options = array('conditions' => array('OrderDetail.' . $this->OrderDetail->primaryKey => $id));
 		$this->set('orderDetail', $this->OrderDetail->find('first', $options));
 	}
+        
+        public function addtopping($id = null){
+            $this->layout = 'customer';
+            $this->loadModel('MenuItem');
+            $this->loadModel('Topping');
+            $this->loadModel('OrderDetailTopping');
+            $thisitem = $this->OrderDetail->find('all', array('conditions' => array('OrderDetail.id' => $id)));
+            $toppingssofar = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $id)));
+            $this->set('toppingssofar', $toppingssofar);
+            $itemtitle = $thisitem[0]['MenuItem']['title'];
+            $toppings = $this->Topping->find('list', array('conditions' => array('Topping.item' => $itemtitle)));
+            if ($this->request->is('post')) {
+                        
+			
+                        $this->OrderDetailTopping->create();
+                        $toppingselected = $this->Topping->find('all', array('conditions' => array('Topping.id' => $this->request->data['OrderDetail']['toppings'])));
+                        $this->OrderDetailTopping->set(array('order_detail_id' => $id, 
+                            'topping_id' => $this->request->data['OrderDetail']['toppings'],
+                            'price' => $toppingselected[0]['Topping']['price']));
+                        $this->OrderDetailTopping->save();
+                        
+		}
+                $this->set('item', $itemtitle);
+                
+                $this->set(compact('toppings'));
+                
+           
+        }
 
 /**
  * add method
