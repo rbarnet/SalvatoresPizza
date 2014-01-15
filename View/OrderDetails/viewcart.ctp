@@ -9,7 +9,7 @@
 	</tr>
 	<?php $count = 0;   foreach ($orderDetails as $orderDetail): ?>
 	<tr>
-		
+                        
 		<td>
 			<?php echo ($orderDetail['MenuItem']['title']); ?>
 		</td>
@@ -19,8 +19,8 @@
                     ?></td>
                 
 		<td class="actionscart">
-                <?php echo $this->HTML->link(__('Add/Remove/View Toppings'), array('action' => 'addtopping', $orderDetail['OrderDetail']['id']), null);} ?>
-			<?php echo $this->HTML->link(__('Remove from Cart'), array('action' => 'deleteitemcustomer', $orderDetail['OrderDetail']['id']), null, __('Are you sure you want to remove this item from your cart?', $orderDetail['OrderDetail']['id'])); ?>
+                    <button><?php echo $this->HTML->link(__('Add/Remove/View Toppings'), array('action' => 'addtopping', $orderDetail['OrderDetail']['id']), null);} ?></button>
+                    <button><?php echo $this->HTML->link(__('Remove from Cart'), array('action' => 'deleteitemcustomer', $orderDetail['OrderDetail']['id']), null, __('Are you sure you want to remove this item from your cart?', $orderDetail['OrderDetail']['id'])); ?></button>
 		</td>
 	</tr>
 <?php $count++; endforeach; 

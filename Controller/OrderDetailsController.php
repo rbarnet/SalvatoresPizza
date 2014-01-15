@@ -95,9 +95,11 @@ class OrderDetailsController extends AppController {
             $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
             ));
+            $toppingsarray = array();
             $toppingstotal = 0;
             while($count < count($orderDetails)){
                 $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
+                array_push($toppingsarray, $toppingsonitem);
                 foreach($toppingsonitem as $itemtoppings){
                     $toppingstotal += $itemtoppings['OrderDetailTopping']['price'];
                 }
@@ -122,6 +124,8 @@ class OrderDetailsController extends AppController {
                 $count++;
             }
             $count = 0;
+            //debug($toppingsarray);
+            $this->set('toppingsarray', $toppingsarray);
             $this->set(compact('toppings'));
             $locations = $this->Location->find('all', array(
             'conditions' => array('id' => $location)));

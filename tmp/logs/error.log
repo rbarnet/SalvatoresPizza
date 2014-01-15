@@ -960,3 +960,43 @@ Stack Trace:
 #4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailToppingsController), Object(CakeRequest), Object(CakeResponse))
 #5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-01-15 22:18:34 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [F:\xampp\htdocs\SalvatoresPizza\View\OrderDetails\viewcart.ctp, line 18]
+2014-01-15 22:18:34 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'F:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'F:\xampp\htdocs...', 18, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'F:\xampp\htdocs...', 18, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-15 22:21:34 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [F:\xampp\htdocs\SalvatoresPizza\View\OrderDetails\viewcart.ctp, line 37]
+2014-01-15 22:21:34 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 37, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\xampp\htdocs...', 37, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-15 22:22:33 Error: Fatal Error (4): syntax error, unexpected end of file in [F:\xampp\htdocs\SalvatoresPizza\View\OrderDetails\viewcart.ctp, line 49]
+2014-01-15 22:22:33 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 49, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\xampp\htdocs...', 49, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-15 22:24:03 Error: Fatal Error (4): syntax error, unexpected end of file in [F:\xampp\htdocs\SalvatoresPizza\View\OrderDetails\viewcart.ctp, line 49]
+2014-01-15 22:24:03 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 49, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\xampp\htdocs...', 49, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
