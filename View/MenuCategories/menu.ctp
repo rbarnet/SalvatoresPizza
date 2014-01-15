@@ -8,13 +8,13 @@
           } else  {
             echo "<h2>".$category['MenuCategory']['title']."</h2>";
             foreach ($menuItems as $item) {?> <tr><td><?php
-                echo $item['MenuItem']['title'] . '       ' . $item['MenuItem']['price']."\n";?>
+                echo $item['MenuItem']['title'] . '       $' . $item['MenuItem']['price']."\n";?>
                 </td>
     
                 <td class="actions">
-			<?php  echo $this->Html->link(__('Add to Cart Hoover'), array('controller' => 'orderdetails','action' => 'addtocart', $item['MenuItem']['id'], 1));
-                echo $this->Html->link(__('Add to Cart Trussville'), array('controller' => 'orderdetails','action' => 'addtocart', $item['MenuItem']['id'], 2));
-                 echo "<br />";
+			<button><?php  echo $this->Html->link(__('Add to Cart Hoover'), array('controller' => 'orderdetails','action' => 'addtocart', $item['MenuItem']['id'], 1));?></button>
+                        <button><?php echo $this->Html->link(__('Add to Cart Trussville'), array('controller' => 'orderdetails','action' => 'addtocart', $item['MenuItem']['id'], 2));?></button>
+                 <?php echo "<br />";
                  echo "<br />";
             }  
           }

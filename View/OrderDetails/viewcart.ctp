@@ -4,7 +4,11 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo ('Menu Item   '); ?></th>
-			<th><?php echo ('Price'); ?></th>
+                        <th><?php echo ('Toppings'); ?></th>
+<!--			<th><?php// echo ('Base Price'); ?></th>
+                        <th><?php// echo  ('Topping Price'); ?></th>-->
+                        <th><?php echo  ('Item Price'); ?></th>
+                        
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php $count = 0;   foreach ($orderDetails as $orderDetail): ?>
@@ -13,7 +17,10 @@
 		<td>
 			<?php echo ($orderDetail['MenuItem']['title']); ?>
 		</td>
-		<td><?php echo h('$ ' .  $orderDetail['OrderDetail']['price']); ?>&nbsp;</td>
+                <td> <?php echo($toppingstitlearray[$count]);?></td>
+<!--		<td><?php// echo h('$ ' .  $orderDetail['OrderDetail']['price']); ?>&nbsp;</td>
+                <td><?php// echo h('$ ' .  $toppingsubtotalarray[$count]); ?>&nbsp;</td>-->
+                <td><?php $itemprice = $orderDetail['OrderDetail']['price'] + $toppingsubtotalarray[$count];   echo ('$' . $itemprice);?></td>
                 
                 <td> <?php if($toppings[$count] != null){
                     ?></td>

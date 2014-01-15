@@ -97,12 +97,20 @@ class OrderDetailsController extends AppController {
             ));
             $toppingsarray = array();
             $toppingstotal = 0;
+            $toppingstitlearray = array();
+            $toppingssubtotalarray = array();
             while($count < count($orderDetails)){
                 $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
                 array_push($toppingsarray, $toppingsonitem);
+                $toppingsstring = '';
+                $toppingssubtotal = 0;
                 foreach($toppingsonitem as $itemtoppings){
                     $toppingstotal += $itemtoppings['OrderDetailTopping']['price'];
+                    $toppingssubtotal += $itemtoppings['OrderDetailTopping']['price'];
+                    $toppingsstring .= $itemtoppings['Topping']['title'] . ' ';
                 }
+                array_push($toppingstitlearray, $toppingsstring);
+                array_push($toppingssubtotalarray, $toppingssubtotal);
                 if($orderDetails[$count]['MenuItem']['title'] == 'Personal 10"'){
                     $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Personal 10"')));  
                 }
@@ -115,7 +123,7 @@ class OrderDetailsController extends AppController {
                 else if($orderDetails[$count]['MenuItem']['title'] == 'Extra Large 18"'){
                     $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Extra Large 18"')));
                 }
-                else if($orderDetails[$count]['MenuItem']['title'] == 'Cheese'){
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Cheese' || $orderDetails[$count]['MenuItem']['menu_category_id'] == 5){
                     $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Cheese')));
                 }
                 else{
@@ -125,7 +133,8 @@ class OrderDetailsController extends AppController {
             }
             $count = 0;
             //debug($toppingsarray);
-            $this->set('toppingsarray', $toppingsarray);
+            $this->set('toppingstitlearray', $toppingstitlearray);
+            $this->set('toppingsubtotalarray', $toppingssubtotalarray);
             $this->set(compact('toppings'));
             $locations = $this->Location->find('all', array(
             'conditions' => array('id' => $location)));
