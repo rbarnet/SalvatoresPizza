@@ -71,10 +71,12 @@ class AppController extends Controller {
         $group->id = 2;
         $this->Acl->allow($group, 'controllers');
         $group->id = 5;
-        //allow users the ability to add to cart and view cart and logout and remove items from cart
+        //allow customers the ability to add to cart and view cart and logout and remove items from cart
         $this->Acl->allow($group, 'controllers/OrderDetails/addtocart');
         $this->Acl->allow($group, 'controllers/OrderDetails/viewcart');
-        $this->Acl->allow($group, 'controllers/OrderDetails/delete');
+        $this->Acl->allow($group, 'controllers/OrderDetails/deleteitemcustomer');
+        $this->Acl->allow($group, 'controllers/OrderDetails/addtopping');
+        $this->Acl->allow($group, 'controllers/OrderDetailToppings/deletetoppingcustomer');
         $this->Acl->allow($group, 'controllers/Users/logout');
         $this->loadModel('MenuCategory');
         $this->MenuCategory->recursive = 0;

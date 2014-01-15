@@ -99,10 +99,11 @@ class OrderDetailToppingsController extends AppController {
 			throw new NotFoundException(__('Invalid order detail topping'));
 		}
 		$this->request->onlyAllow('post', 'delete', 'get');
-                $orderdetailtopping = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.id' => id)));
+                $orderdetailtopping = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.id' => $id)));
                 $this->loadModel('OrderDetail');
                 $orderdetail = $this->OrderDetail->find('all', array('conditions' => array('OrderDetail.id' => $orderdetailtopping[0]['OrderDetailTopping']['order_detail_id'])));
                 $this->loadModel('Order');
+                //debug($orderdetail);
                 if($orderdetail[0]['Order']['user_id'] == $this->Auth->user('id')){
 		if ($this->OrderDetailTopping->delete()) {
 			$this->Session->setFlash(__('You have successfully removed the topping.'));

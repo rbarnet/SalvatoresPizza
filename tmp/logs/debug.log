@@ -349,3 +349,174 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
 [main] - APP\webroot\index.php, line 101
 
+2014-01-15 18:05:19 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:05:19 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:05:19 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:05:44 Debug: Notice (8): Use of undefined constant id - assumed 'id' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 102]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 102
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:05:44 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 104]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 104
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:05:44 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 106]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:01 Debug: Notice (8): Use of undefined constant id - assumed 'id' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 102]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 102
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:01 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 104]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 104
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:01 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 106]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:59 Debug: Notice (8): Use of undefined constant id - assumed 'id' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 102]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 102
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:59 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 104]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 104
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:59 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 106]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:06:59 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 110]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 110
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:07:10 Debug: Notice (8): Use of undefined constant id - assumed 'id' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 102]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 102
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:07:10 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 104]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 104
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:07:10 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 106]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:07:10 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php, line 110]
+Trace:
+OrderDetailToppingsController::deletetoppingcustomer() - APP\Controller\OrderDetailToppingsController.php, line 110
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:56:09 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 96]
+Trace:
+OrderDetailsController::viewcart() - APP\Controller\OrderDetailsController.php, line 96
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 18:56:09 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 128]
+Trace:
+OrderDetailsController::viewcart() - APP\Controller\OrderDetailsController.php, line 128
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
