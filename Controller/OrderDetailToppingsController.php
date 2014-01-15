@@ -93,13 +93,32 @@ class OrderDetailToppingsController extends AppController {
  * @throws NotFoundException
  * @param string $id
  * @return void
- */
-	public function delete($id = null) {
+ */     public function deletetoppingcustomer($id = null) {
 		$this->OrderDetailTopping->id = $id;
 		if (!$this->OrderDetailTopping->exists()) {
 			throw new NotFoundException(__('Invalid order detail topping'));
 		}
 		$this->request->onlyAllow('post', 'delete', 'get');
+                $orderdetailtopping = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.id' => id)));
+                $this->loadModel('OrderDetail');
+                $orderdetail = $this->OrderDetail->find('all', array('conditions' => array('OrderDetail.id' => $orderdetailtopping[0]['OrderDetailTopping']['order_detail_id'])));
+                $this->loadModel('Order');
+                if($orderdetail[0]['Order']['user_id'] == $this->Auth->user('id')){
+		if ($this->OrderDetailTopping->delete()) {
+			$this->Session->setFlash(__('You have successfully removed the topping.'));
+                }} else {
+			$this->Session->setFlash(__('The order detail topping could not be deleted. Please, try again.'));
+		}
+		return $this->redirect($this->redirect($this->referer()));
+	}
+        
+        
+	public function delete($id = null) {
+		$this->OrderDetailTopping->id = $id;
+		if (!$this->OrderDetailTopping->exists()) {
+			throw new NotFoundException(__('Invalid order detail topping'));
+		}
+		$this->request->onlyAllow('post', 'delete');
 		if ($this->OrderDetailTopping->delete()) {
 			$this->Session->setFlash(__('The order detail topping has been deleted.'));
 		} else {

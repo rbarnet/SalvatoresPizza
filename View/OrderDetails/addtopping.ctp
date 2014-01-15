@@ -10,7 +10,7 @@
                     
                     <?php echo ($toppingschosen['Topping']['title'] . "   $" .$toppingschosen['Topping']['price']);
                     ?>
-                    <?php  echo $this->HTML->link(__('Remove topping'), array('controller' => 'OrderDetailToppings','action' => 'delete', $toppingschosen['OrderDetailTopping']['id']), null, __('Are you sure you want to remove this topping?', $toppingschosen['OrderDetailTopping']['id']));?>
+                    <?php  echo $this->HTML->link(__('Remove topping'), array('controller' => 'OrderDetailToppings','action' => 'deletetoppingcustomer', $toppingschosen['OrderDetailTopping']['id']), null, __('Are you sure you want to remove this topping?', $toppingschosen['OrderDetailTopping']['id']));?>
             <?php echo("<br></br>");?>
         <?php } ?>
         
