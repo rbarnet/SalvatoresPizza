@@ -99,7 +99,7 @@ class OrderDetailToppingsController extends AppController {
 		if (!$this->OrderDetailTopping->exists()) {
 			throw new NotFoundException(__('Invalid order detail topping'));
 		}
-		$this->request->onlyAllow('post', 'delete');
+		$this->request->onlyAllow('post', 'delete', 'get');
 		if ($this->OrderDetailTopping->delete()) {
 			$this->Session->setFlash(__('The order detail topping has been deleted.'));
 		} else {

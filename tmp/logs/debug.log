@@ -214,3 +214,138 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
 [main] - APP\webroot\index.php, line 101
 
+2014-01-15 07:59:18 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 07:59:18 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 07:59:18 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:01:37 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:01:37 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:01:37 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:02:58 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:02:58 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:02:58 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:04:15 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:04:15 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:04:15 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:05:54 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 159]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:05:54 Debug: Notice (8): Undefined index: OrderDetail in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 161]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 161
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-15 08:05:54 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 162]
+Trace:
+OrderDetailsController::addtopping() - APP\Controller\OrderDetailsController.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+

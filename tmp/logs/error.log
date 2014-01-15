@@ -930,3 +930,33 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-15 08:01:46 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /SalvatoresPizza/OrderDetailToppings/delete/12
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php(102): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: OrderDetailToppingsController->delete('12')
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailToppingsController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailToppingsController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-15 08:03:10 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /SalvatoresPizza/OrderDetailToppings/delete/1
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php(102): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: OrderDetailToppingsController->delete('1')
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailToppingsController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailToppingsController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-15 08:03:24 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /SalvatoresPizza/OrderDetailToppings/delete/2
+Stack Trace:
+#0 F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailToppingsController.php(102): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: OrderDetailToppingsController->delete('2')
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderDetailToppingsController), Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailToppingsController), Object(CakeRequest), Object(CakeResponse))
+#5 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
