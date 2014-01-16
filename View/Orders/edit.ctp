@@ -8,6 +8,7 @@
 		echo $this->Form->input('location_id');
 		echo $this->Form->input('orderdate');
 		echo $this->Form->input('stage_id');
+                echo $this->Form->input('note');
 		echo $this->Form->input('total');
 		echo $this->Form->input('paid');
 	?>

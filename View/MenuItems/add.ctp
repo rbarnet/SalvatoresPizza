@@ -4,11 +4,16 @@
 		<legend><?php echo __('Add Menu Item'); ?></legend>
 	<?php
 		echo $this->Form->input('menu_category_id');
-		echo $this->Form->input('order');
+		$currentspecials = array('Yes' => 'Current', 'No' => 'Not Current');
+            echo $this->Form->input(
+                'currentspecial',
+                array('options' => $currentspecials, 'default' => 'No')
+                );
+                
 		echo $this->Form->input('title');
 		echo $this->Form->input('tagline');
 		echo $this->Form->input('price');
-		echo $this->Form->input('dateforspecial');
+		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

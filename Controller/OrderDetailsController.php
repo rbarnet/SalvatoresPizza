@@ -44,6 +44,7 @@ class OrderDetailsController extends AppController {
             $this->Order->set(array('location_id' => $location,
                 'stage_id' => 1,
                 'orderdate' => $date,
+                'note' => '',
                 'total' => $menuitem[0]['MenuItem']['price'],
                 'paid' => $menuitem[0]['MenuItem']['price'],
                 'user_id' =>$userid,
@@ -180,6 +181,8 @@ class OrderDetailsController extends AppController {
                             'topping_id' => $this->request->data['OrderDetail']['toppings'],
                             'price' => $toppingselected[0]['Topping']['price']));
                         $this->OrderDetailTopping->save();
+                        $this->Session->setFlash(__('Topping successfully added.'));
+                        return $this->redirect($this->redirect($this->referer()));
                         
 		}
                 $this->set('item', $itemtitle);
@@ -245,6 +248,7 @@ class OrderDetailsController extends AppController {
  */
 	public function delete($id = null) {
 		$this->OrderDetail->id = $id;
+                $this->loadModel('OrderDetailTopping');
 		if (!$this->OrderDetail->exists()) {
 			throw new NotFoundException(__('Invalid order detail'));
 		}

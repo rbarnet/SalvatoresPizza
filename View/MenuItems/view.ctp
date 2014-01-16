@@ -11,9 +11,9 @@
 			<?php echo $this->Html->link($menuItem['MenuCategory']['title'], array('controller' => 'menu_categories', 'action' => 'view', $menuItem['MenuCategory']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Order'); ?></dt>
+		<dt><?php echo __('Current Special'); ?></dt>
 		<dd>
-			<?php echo h($menuItem['MenuItem']['order']); ?>
+			<?php echo h($menuItem['MenuItem']['currentspecial']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Title'); ?></dt>
@@ -31,11 +31,7 @@
 			<?php echo h($menuItem['MenuItem']['price']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Dateforspecial'); ?></dt>
-		<dd>
-			<?php echo h($menuItem['MenuItem']['dateforspecial']); ?>
-			&nbsp;
-		</dd>
+		
 	</dl>
 </div>
 <div class="actions">

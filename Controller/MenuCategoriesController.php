@@ -78,10 +78,10 @@ return $this->redirect(array('action' => 'index'));
         if ($menuItems) {
             // this means there ARE items for this category (ignore sub-categories ... should not exist)
             if($category_id == 29){
-                $date = "2014-05-10 00:00:00";//A daily special will be shown if it is added to the time of Zach's birthday.  I will change this later, but
+                $currentspecial = 'Yes';//A daily special will be shown if the value in the currentspecial field is 'Yes'
                 //that might entail a database modification
                 $menuItems = $this->MenuCategory->MenuItem->find('all', array('conditions' => array('MenuItem.menu_category_id=' . $category_id,
-                    'MenuItem.dateforspecial' => $date)));
+                    'MenuItem.currentspecial' => $currentspecial)));
             }
             
             $this->set(compact('menuItems'));

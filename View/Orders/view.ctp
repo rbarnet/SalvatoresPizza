@@ -26,6 +26,12 @@
 			<?php echo $this->Html->link($order['Stage']['id'], array('controller' => 'stages', 'action' => 'view', $order['Stage']['id'])); ?>
 			&nbsp;
 		</dd>
+                <dt><?php echo __('Note'); ?></dt>
+		<dd>
+			<?php echo h($order['Order']['note']); ?>
+			&nbsp;
+		</dd>
+		<dt><?p
 		<dt><?php echo __('Total'); ?></dt>
 		<dd>
 			<?php echo h($order['Order']['total']); ?>

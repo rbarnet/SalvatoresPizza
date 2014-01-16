@@ -556,3 +556,30 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
 [main] - APP\webroot\index.php, line 101
 
+2014-01-16 22:16:57 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 97]
+Trace:
+OrderDetailsController::viewcart() - APP\Controller\OrderDetailsController.php, line 97
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-16 22:16:57 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 145]
+Trace:
+OrderDetailsController::viewcart() - APP\Controller\OrderDetailsController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-16 22:16:57 Debug: Notice (8): Undefined offset: 0 in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrderDetailsController.php, line 147]
+Trace:
+OrderDetailsController::viewcart() - APP\Controller\OrderDetailsController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 187
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+

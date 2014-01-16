@@ -7,6 +7,7 @@
 			<th><?php echo $this->Paginator->sort('location_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('orderdate'); ?></th>
 			<th><?php echo $this->Paginator->sort('stage_id'); ?></th>
+                        <th><?php echo $this->Paginator->sort('note'); ?></th>
 			<th><?php echo $this->Paginator->sort('total'); ?></th>
 			<th><?php echo $this->Paginator->sort('paid'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -24,6 +25,7 @@
 		<td>
 			<?php echo $this->Html->link($order['Stage']['id'], array('controller' => 'stages', 'action' => 'view', $order['Stage']['id'])); ?>
 		</td>
+                <td><?php echo h($order['Order']['note']); ?>&nbsp;</td>
 		<td><?php echo h($order['Order']['total']); ?>&nbsp;</td>
 		<td><?php echo h($order['Order']['paid']); ?>&nbsp;</td>
 		<td class="actions">

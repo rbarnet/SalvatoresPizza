@@ -4,11 +4,11 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('menu_category_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('order'); ?></th>
+	                <th><?php echo $this->Paginator->sort('currentspecial'); ?></th>
 			<th><?php echo $this->Paginator->sort('title'); ?></th>
 			<th><?php echo $this->Paginator->sort('tagline'); ?></th>
 			<th><?php echo $this->Paginator->sort('price'); ?></th>
-			<th><?php echo $this->Paginator->sort('dateforspecial'); ?></th>
+			
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($menuItems as $menuItem): ?>
@@ -17,11 +17,11 @@
 		<td>
 			<?php echo $this->Html->link($menuItem['MenuCategory']['title'], array('controller' => 'menu_categories', 'action' => 'view', $menuItem['MenuCategory']['id'])); ?>
 		</td>
-		<td><?php echo h($menuItem['MenuItem']['order']); ?>&nbsp;</td>
+		<td><?php echo h($menuItem['MenuItem']['currentspecial']); ?>&nbsp;</td>
 		<td><?php echo h($menuItem['MenuItem']['title']); ?>&nbsp;</td>
 		<td><?php echo h($menuItem['MenuItem']['tagline']); ?>&nbsp;</td>
 		<td><?php echo h($menuItem['MenuItem']['price']); ?>&nbsp;</td>
-		<td><?php echo h($menuItem['MenuItem']['dateforspecial']); ?>&nbsp;</td>
+		
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $menuItem['MenuItem']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $menuItem['MenuItem']['id'])); ?>
