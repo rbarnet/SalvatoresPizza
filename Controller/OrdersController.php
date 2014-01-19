@@ -192,7 +192,7 @@ class OrdersController extends AppController {
 
             $setECResponse = $paypalService->SetExpressCheckout($setECReq);
             
-            debug($setECResponse->Token);
+            debug($setECResponse->Errors);
             $this->redirect('https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $setECResponse->Token);
         }
 }
