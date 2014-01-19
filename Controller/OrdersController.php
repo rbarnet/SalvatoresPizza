@@ -1,5 +1,10 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'paypal', array
+(
+    'file' => 'merchant-sdk-php' . DS . 'lib' . DS . 'PayPal' . DS. 'EBLBaseComponents' . DS . 'PaymentDetailsType'
+));
+        
 /**
  * Orders Controller
  *
@@ -109,4 +114,85 @@ class OrdersController extends AppController {
 		$this->Session->setFlash(__('Order was not deleted'));
 		return $this->redirect(array('action' => 'index'));
 	}
+        
+        public function checkout($id = null){
+            require_once('F:/xampp/htdocs/SalvatoresPizza/Vendor/autoload.php');
+            $this->loadModel('OrderDetail');
+            $this->loadModel('OrderDetailTopping');
+            //We need these models loaded to work with them
+           $orderDetails = $this->OrderDetail->find('all', array(
+            'conditions' => array('order_id' => $id)
+            ));//find all the items associated with this particular order
+            $toppingsarray = array();
+            $toppingstotal = 0;//keeps track of the price of all the toppings associated with this order
+            $toppingstitlearray = array();//keeps track of the titles of the toppings
+            $toppingssubtotalarray = array();//Keeps track of the subtotal of all the toppings
+            //each index in each of these arrays is associated with an item in the orderdetails array
+            //orderDetails[0] is associated with $toppingstitlearray[0] and $toppingssubtotalarray[0]
+            $count = 0;  //Counter for the loop
+            $config = array (
+                'mode' => 'sandbox' , 
+                'acct1.UserName' => 'jb-us-seller_api1.paypal.com',
+                'acct1.Password' => 'WX4WTU3S8MY44S7F', 
+                'acct1.Signature' => 'AFcWxV21C7fd0v3bYYYRCpSSRl31A7yDhhsPUU2XhtMoZXsWHFxu-RWy'
+            );//configuration array
+            $paymentDetails= new \PayPal\EBLBaseComponents\PaymentDetailsType();
+            $paypalService = new \PayPal\Service\PayPalAPIInterfaceServiceService($config);
+            $total = 0;
+            while($count < count($orderDetails)){
+                $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
+                $toppingsstring = '';
+                $toppingssubtotal = 0;
+                foreach($toppingsonitem as $itemtoppings){
+                    //for each topping on the item add the price of the topping to the toppings total for 
+                    //the entire order
+                    $toppingstotal += $itemtoppings['OrderDetailTopping']['price'];
+                    //Add the price each topping on this item for the subtotal of all the toppings on this particular
+                    //item
+                    $toppingssubtotal += $itemtoppings['OrderDetailTopping']['price'];
+                    //keep track of all the toppings on this particular item
+                    $toppingsstring .= $itemtoppings['Topping']['title'] . ' ';
+                }
+            
+            $total += $orderDetails[$count]['MenuItem']['price'] + $toppingssubtotal;
+            $itemDetails = new PayPal\EBLBaseComponents\PaymentDetailsItemType();
+            $itemDetails->Name = $orderDetails[$count]['MenuItem']['title'];
+            $itemAmount = $orderDetails[$count]['MenuItem']['price'] + $toppingssubtotal;
+            $itemDetails->Amount = $itemAmount;
+            $itemQuantity = '1';
+            //specify the quantity of the item and put it in the quantity for the item details object
+            $itemDetails->Quantity = $itemQuantity;
+             //put the item in the payment details array or object
+            $paymentDetails->PaymentDetailsItem[$count] = $itemDetails;
+                //first find all the toppings associated with a certain item
+                $count++;
+            }
+            //calculate the total for the entire order
+            $projectedtotal = $total;
+            
+
+            $orderTotal = new \PayPal\CoreComponentTypes\BasicAmountType();
+            $orderTotal->currencyID = 'USD';
+            $orderTotal->value = $projectedtotal; 
+
+            $paymentDetails->OrderTotal = $orderTotal;
+            $paymentDetails->PaymentAction = 'Sale';
+
+            $setECReqDetails = new PayPal\EBLBaseComponents\SetExpressCheckoutRequestDetailsType();
+            $setECReqDetails->PaymentDetails = $paymentDetails;
+            $setECReqDetails->CancelURL = 'https://devtools-paypal.com/guide/expresscheckout/php?cancel=true';
+            $setECReqDetails->ReturnURL = 'https://devtools-paypal.com/guide/expresscheckout/php?success=true';
+
+            $setECReqType = new \PayPal\PayPalAPI\SetExpressCheckoutRequestType();
+            $setECReqType->Version = '106.0';
+            $setECReqType->SetExpressCheckoutRequestDetails = $setECReqDetails;
+
+            $setECReq = new \PayPal\PayPalAPI\SetExpressCheckoutReq();
+            $setECReq->SetExpressCheckoutRequest = $setECReqType;
+
+            $setECResponse = $paypalService->SetExpressCheckout($setECReq);
+            
+            debug($setECResponse->Token);
+            $this->redirect('https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $setECResponse->Token);
+        }
 }

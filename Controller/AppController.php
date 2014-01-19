@@ -23,6 +23,7 @@
 
 App::uses('Controller', 'Controller', 'CakeEmail', 'Network/Email');
 
+
 /**
  * Application Controller
  *
@@ -53,6 +54,8 @@ class AppController extends Controller {
     public $helpers = array('Html', 'Form', 'Session');
     
     public function beforeFilter() {
+         
+        
         $this->Auth->loginAction = array(
           'controller' => 'users',
           'action' => 'login'

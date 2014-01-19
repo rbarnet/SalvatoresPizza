@@ -56,6 +56,7 @@ if (!defined('APP_DIR')) {
  */
 define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'cake' . DS . 'cakephp-2.4.0' . DS . 'lib');
 
+require_once('F:/xampp/htdocs/SalvatoresPizza/Vendor/autoload.php');
 /**
  * Editing below this line should NOT be necessary.
  * Change at your own risk.

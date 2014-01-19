@@ -1030,3 +1030,1211 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-18 19:31:36 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 19:32:39 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 19:36:25 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 19:51:56 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:02:11 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:02:17 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:05:32 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:05:59 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:07:01 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:07:07 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:08:49 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:09:07 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:11:01 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:11:08 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check. Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [group_id] => 2
+            [email] => rbarnett@samford.edu
+            [addr1] => 
+            [addr2] => 
+            [phone] => 
+            [firstname] => 
+            [lastname] => 
+            [Group] => Array
+                (
+                    [id] => 2
+                    [title] => Administrator
+                    [description] => Manage the website
+                )
+
+        )
+
+)
+
+Aco: controllers/Orders/checkout in [C:\cake\cakephp-2.4.0\lib\Cake\Model\Permission.php, line 93]
+Trace:
+Permission::check() - CORE\Cake\Model\Permission.php, line 93
+DbAcl::check() - CORE\Cake\Controller\Component\Acl\DbAcl.php, line 74
+AclComponent::check() - CORE\Cake\Controller\Component\AclComponent.php, line 110
+ActionsAuthorize::authorize() - CORE\Cake\Controller\Component\Auth\ActionsAuthorize.php, line 40
+AuthComponent::isAuthorized() - CORE\Cake\Controller\Component\AuthComponent.php, line 466
+AuthComponent::startup() - CORE\Cake\Controller\Component\AuthComponent.php, line 307
+ObjectCollection::trigger() - CORE\Cake\Utility\ObjectCollection.php, line 132
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 248
+Controller::startupProcess() - CORE\Cake\Controller\Controller.php, line 675
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 184
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 101
+
+2014-01-18 20:11:57 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 134]
+2014-01-18 20:11:57 Error: [InternalErrorException] Internal Server Error
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 20:12:30 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 134]
+2014-01-18 20:12:30 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 20:16:18 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 134]
+2014-01-18 20:16:18 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 21:56:06 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 134]
+2014-01-18 21:56:06 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 22:02:20 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 134]
+2014-01-18 22:02:20 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 134, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 22:03:19 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 22:03:19 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 22:05:22 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 22:05:22 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 22:06:10 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 22:06:10 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:25:02 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 116]
+2014-01-18 23:25:02 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 116)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\xampp\htdocs...', 116, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\xampp\htdocs...', 116, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:26:06 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:26:06 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:29:31 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 57]
+2014-01-18 23:29:31 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:30:10 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '.SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 57]
+2014-01-18 23:30:10 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '.SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:30:36 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/xampp/htdocs/SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 57]
+2014-01-18 23:30:36 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/xampp/htdocs/SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:30:38 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/xampp/htdocs/SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 57]
+2014-01-18 23:30:38 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/xampp/htdocs/SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 57, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:32:14 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'F:\xampp\htdocs\SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:32:14 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'F:\xampp\htdocs\SalvatoresPizza/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:32:36 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:32:36 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:33:08 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:33:08 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:33:10 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:33:10 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:33:14 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:33:14 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '__ROOT__/Vendor/paypal/merchant-sdkphp/lib/PayPal/EBLBaseComponents/PaymentDetailsType' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:37:11 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:37:11 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:40:52 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:40:52 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:45:03 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'Vendor/autoload.php' (include_path='.;F:\xampp\php\PEAR') in [F:\xampp\htdocs\SalvatoresPizza\Controller\AppController.php, line 58]
+2014-01-18 23:45:03 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'Vendor/autoload.php' (include_path='.;F:\xampp\php\PEAR')
+Request URL: /SalvatoresPizza/orderdetails/viewcart/1
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'F:\xampp\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'F:\xampp\htdocs...', 58, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'F:\xampp\htdocs...', 58, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:46:37 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:46:37 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:52:25 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:52:25 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:53:11 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:53:11 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:55:58 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:55:58 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-18 23:59:09 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 136]
+2014-01-18 23:59:09 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 136, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:05:43 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 139]
+2014-01-19 00:05:43 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:06:19 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 139]
+2014-01-19 00:06:19 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:17:19 Error: Fatal Error (1): Class 'PaymentDetailsType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 139]
+2014-01-19 00:17:19 Error: [FatalErrorException] Class 'PaymentDetailsType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 139, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:22:18 Error: Fatal Error (1): Class 'PayPalAPIInterfaceServiceService' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 140]
+2014-01-19 00:22:18 Error: [FatalErrorException] Class 'PayPalAPIInterfaceServiceService' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:23:35 Error: Fatal Error (1): Class 'PayPalAPIInterfaceServiceService' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 140]
+2014-01-19 00:23:35 Error: [FatalErrorException] Class 'PayPalAPIInterfaceServiceService' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PayPalAP...', 'F:\xampp\htdocs...', 140, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:25:51 Error: Fatal Error (1): Class 'PaymentDetailsItemType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 158]
+2014-01-19 00:25:51 Error: [FatalErrorException] Class 'PaymentDetailsItemType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:27:52 Error: Fatal Error (1): Class 'PaymentDetailsItemType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 158]
+2014-01-19 00:27:52 Error: [FatalErrorException] Class 'PaymentDetailsItemType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:28:15 Error: Fatal Error (1): Class 'PaymentDetailsItemType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 158]
+2014-01-19 00:28:15 Error: [FatalErrorException] Class 'PaymentDetailsItemType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'PaymentD...', 'F:\xampp\htdocs...', 158, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:28:51 Error: Fatal Error (1): Class 'BasicAmountType' not found in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 174]
+2014-01-19 00:28:51 Error: [FatalErrorException] Class 'BasicAmountType' not found
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'BasicAmo...', 'F:\xampp\htdocs...', 174)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BasicAmo...', 'F:\xampp\htdocs...', 174, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'BasicAmo...', 'F:\xampp\htdocs...', 174, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 00:30:50 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:31:16 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:32:00 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:32:19 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:32:36 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:40:14 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:42:35 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:44:33 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:44:51 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:45:02 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:45:13 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:46:53 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:48:07 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:50:17 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:51:12 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:51:36 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:54:51 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:55:14 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:55:36 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:56:14 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:56:22 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:57:23 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:58:07 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 00:58:38 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
