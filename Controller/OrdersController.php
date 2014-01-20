@@ -141,7 +141,7 @@ class OrdersController extends AppController {
             $total = 0;
             while($count < count($orderDetails)){
                 $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
-                $toppingsstring = '';
+                $toppingsstring = ' with ';
                 $toppingssubtotal = 0;
                 foreach($toppingsonitem as $itemtoppings){
                     //for each topping on the item add the price of the topping to the toppings total for 
@@ -153,10 +153,12 @@ class OrdersController extends AppController {
                     //keep track of all the toppings on this particular item
                     $toppingsstring .= $itemtoppings['Topping']['title'] . ' ';
                 }
-            
+            if($toppingsstring === ' with '){
+                $toppingsstring = '';
+            }
             $total += $orderDetails[$count]['MenuItem']['price'] + $toppingssubtotal;
             $itemDetails = new PayPal\EBLBaseComponents\PaymentDetailsItemType();
-            $itemDetails->Name = $orderDetails[$count]['MenuItem']['title'];
+            $itemDetails->Name = $orderDetails[$count]['MenuItem']['title'] . $toppingsstring;
             $itemAmount = $orderDetails[$count]['MenuItem']['price'] + $toppingssubtotal;
             $itemDetails->Amount = $itemAmount;
             $itemQuantity = '1';
@@ -180,8 +182,8 @@ class OrdersController extends AppController {
 
             $setECReqDetails = new PayPal\EBLBaseComponents\SetExpressCheckoutRequestDetailsType();
             $setECReqDetails->PaymentDetails = $paymentDetails;
-            $setECReqDetails->CancelURL = 'https://devtools-paypal.com/guide/expresscheckout/php?cancel=true';
-            $setECReqDetails->ReturnURL = 'https://devtools-paypal.com/guide/expresscheckout/php?success=true';
+            $setECReqDetails->CancelURL = 'http://localhost/SalvatoresPizza/orders/checkoutcancelled/';
+            $setECReqDetails->ReturnURL = 'https://localhost/SalvatoresPizza/orders/confirmcheckout/' . $id;
 
             $setECReqType = new \PayPal\PayPalAPI\SetExpressCheckoutRequestType();
             $setECReqType->Version = '106.0';
@@ -194,5 +196,9 @@ class OrdersController extends AppController {
             
             debug($setECResponse->Errors);
             $this->redirect('https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $setECResponse->Token);
+        }
+        public function checkoutcancelled(){
+            $this->Session->setFlash(__("Checkout cancelled."));
+            $this->redirect(array('controller' => 'menucategories', 'action' => 'home'));
         }
 }
