@@ -2238,3 +2238,301 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-20 19:39:30 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-10T56366LJ044892N&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 20:48:35 Error: Fatal Error (1): Function name must be a string in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 220]
+2014-01-20 20:48:35 Error: [FatalErrorException] Function name must be a string
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'F:\xampp\htdocs...', 220)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'F:\xampp\htdocs...', 220, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'F:\xampp\htdocs...', 220, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 20:48:59 Error: Fatal Error (1): Call to undefined method OrdersController::debug() in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 220]
+2014-01-20 20:48:59 Error: [FatalErrorException] Call to undefined method OrdersController::debug()
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 220)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\xampp\htdocs...', 220, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\xampp\htdocs...', 220, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 20:49:26 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:01:53 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:03:57 Error: Fatal Error (1): Cannot use object of type PayPal\PayPalAPI\GetExpressCheckoutDetailsResponseType as array in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 220]
+2014-01-20 21:03:57 Error: [FatalErrorException] Cannot use object of type PayPal\PayPalAPI\GetExpressCheckoutDetailsResponseType as array
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 220)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 220, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'F:\xampp\htdocs...', 220, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 21:04:33 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:07:45 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:15:41 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:17:00 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:21:00 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:23:29 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:23:54 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:24:37 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-61K24666H1372164H&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:25:58 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:26:49 Error: Fatal Error (1): Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 221]
+2014-01-20 21:26:49 Error: [FatalErrorException] Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 221)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 221, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'F:\xampp\htdocs...', 221, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 21:28:18 Error: Fatal Error (1): Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 222]
+2014-01-20 21:28:18 Error: [FatalErrorException] Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 21:28:25 Error: Fatal Error (1): Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 222]
+2014-01-20 21:28:25 Error: [FatalErrorException] Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 21:28:47 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:29:37 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:30:41 Error: Fatal Error (1): Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array in [F:\xampp\htdocs\SalvatoresPizza\Controller\OrdersController.php, line 222]
+2014-01-20 21:30:41 Error: [FatalErrorException] Cannot use object of type PayPal\EBLBaseComponents\PaymentDetailsType as array
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'F:\xampp\htdocs...', 222, Array)
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 21:31:07 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:31:59 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:33:54 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:34:11 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 21:34:27 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\confirmcheckout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\confirmcheckout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/confirmcheckout/31?token=EC-4RP97757H0042612R&PayerID=EZU6BQY3824DW
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

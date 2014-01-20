@@ -132,9 +132,9 @@ class OrdersController extends AppController {
             $count = 0;  //Counter for the loop
             $config = array (
                 'mode' => 'sandbox' , 
-                'acct1.UserName' => 'jb-us-seller_api1.paypal.com',
-                'acct1.Password' => 'WX4WTU3S8MY44S7F', 
-                'acct1.Signature' => 'AFcWxV21C7fd0v3bYYYRCpSSRl31A7yDhhsPUU2XhtMoZXsWHFxu-RWy'
+                'acct1.UserName' => 'rbarnett-facilitator_api1.samford.edu',
+                'acct1.Password' => '1390242393', 
+                'acct1.Signature' => 'A45Zwph8ENxkLQByx2YROFuxVw1NAVZ52ufdW0M5hOQzy1vZVjnR7kQt'
             );//configuration array
             $paymentDetails= new \PayPal\EBLBaseComponents\PaymentDetailsType();
             $paypalService = new \PayPal\Service\PayPalAPIInterfaceServiceService($config);
@@ -183,7 +183,7 @@ class OrdersController extends AppController {
             $setECReqDetails = new PayPal\EBLBaseComponents\SetExpressCheckoutRequestDetailsType();
             $setECReqDetails->PaymentDetails = $paymentDetails;
             $setECReqDetails->CancelURL = 'http://localhost/SalvatoresPizza/orders/checkoutcancelled/';
-            $setECReqDetails->ReturnURL = 'https://localhost/SalvatoresPizza/orders/confirmcheckout/' . $id;
+            $setECReqDetails->ReturnURL = 'http://localhost/SalvatoresPizza/orders/confirmcheckout/' . $id;
 
             $setECReqType = new \PayPal\PayPalAPI\SetExpressCheckoutRequestType();
             $setECReqType->Version = '106.0';
@@ -200,5 +200,26 @@ class OrdersController extends AppController {
         public function checkoutcancelled(){
             $this->Session->setFlash(__("Checkout cancelled."));
             $this->redirect(array('controller' => 'menucategories', 'action' => 'home'));
+        }
+        
+        public function confirmcheckout($id = null){
+            $config = array (
+            'mode' => 'sandbox' , 
+            'acct1.UserName' => 'rbarnett-facilitator_api1.samford.edu',
+            'acct1.Password' => '1390242393', 
+            'acct1.Signature' => 'A45Zwph8ENxkLQByx2YROFuxVw1NAVZ52ufdW0M5hOQzy1vZVjnR7kQt'
+        );
+$paypalService = new \PayPal\Service\PayPalAPIInterfaceServiceService($config);
+$Token = $_GET['token'];
+$getExpressCheckoutDetailsRequest = new PayPal\PayPalAPI\GetExpressCheckoutDetailsRequestType($Token);
+$getExpressCheckoutDetailsRequest->Version = '106.0';
+$getExpressCheckoutReq = new \PayPal\PayPalAPI\GetExpressCheckoutDetailsReq();
+$getExpressCheckoutReq->GetExpressCheckoutDetailsRequest = $getExpressCheckoutDetailsRequest;
+
+$getECResponse = $paypalService->GetExpressCheckoutDetails($getExpressCheckoutReq);
+$paymentdetails = $getECResponse->GetExpressCheckoutDetailsResponseDetails;
+$paymentdetailsdeeper = $paymentdetails->PaymentDetails;
+debug($paymentdetailsdeeper[0]->PaymentDetailsItem[0]->Name);
+//$this->set('items', $paymentdetails->PaymentDetails);      
         }
 }
