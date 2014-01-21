@@ -203,6 +203,7 @@ class OrdersController extends AppController {
         }
         
         public function confirmcheckout($id = null){
+            $this->layout = 'customer';
             $config = array (
             'mode' => 'sandbox' , 
             'acct1.UserName' => 'rbarnett-facilitator_api1.samford.edu',
@@ -211,6 +212,7 @@ class OrdersController extends AppController {
         );
 $paypalService = new \PayPal\Service\PayPalAPIInterfaceServiceService($config);
 $Token = $_GET['token'];
+$PayerID = $_GET['PayerID'];
 $getExpressCheckoutDetailsRequest = new PayPal\PayPalAPI\GetExpressCheckoutDetailsRequestType($Token);
 $getExpressCheckoutDetailsRequest->Version = '106.0';
 $getExpressCheckoutReq = new \PayPal\PayPalAPI\GetExpressCheckoutDetailsReq();
@@ -219,7 +221,65 @@ $getExpressCheckoutReq->GetExpressCheckoutDetailsRequest = $getExpressCheckoutDe
 $getECResponse = $paypalService->GetExpressCheckoutDetails($getExpressCheckoutReq);
 $paymentdetails = $getECResponse->GetExpressCheckoutDetailsResponseDetails;
 $paymentdetailsdeeper = $paymentdetails->PaymentDetails;
-debug($paymentdetailsdeeper[0]->PaymentDetailsItem[0]->Name);
+$ordertotal = $paymentdetailsdeeper[0]->OrderTotal->value;
+//debug($paymentdetailsdeeper[0]);
+$this->set('paymentdetails', $paymentdetailsdeeper[0]->PaymentDetailsItem);
+$this->set('ordertotal',$ordertotal);
+$this->set('id', $id);
+$this->Session->write('payerid', $PayerID);
+$this->Session->write('token', $Token);
 //$this->set('items', $paymentdetails->PaymentDetails);      
+        }
+        
+        public function finishcheckout($id = null){
+            $config = array (
+ 	'mode' => 'sandbox' , 
+ 	'acct1.UserName' => 'rbarnett-facilitator_api1.samford.edu',
+	'acct1.Password' => '1390242393', 
+	'acct1.Signature' => 'A45Zwph8ENxkLQByx2YROFuxVw1NAVZ52ufdW0M5hOQzy1vZVjnR7kQt'
+);
+$paypalService = new \PayPal\Service\PayPalAPIInterfaceServiceService($config);
+
+$getExpressCheckoutDetailsRequest = new PayPal\PayPalAPI\GetExpressCheckoutDetailsRequestType($this->Session->read('token'));
+$getExpressCheckoutDetailsRequest->Version = '106.0';
+$getExpressCheckoutReq = new \PayPal\PayPalAPI\GetExpressCheckoutDetailsReq();
+$getExpressCheckoutReq->GetExpressCheckoutDetailsRequest = $getExpressCheckoutDetailsRequest;
+
+$getECResponse = $paypalService->GetExpressCheckoutDetails($getExpressCheckoutReq);
+$paymentdetails = $getECResponse->GetExpressCheckoutDetailsResponseDetails;
+$paymentDetails = new \PayPal\EBLBaseComponents\PaymentDetailsType();
+$paymentDetails->PaymentAction = 'Sale';
+$paymentDetails->NotifyURL = "http://localhost/SalvatoresPizza/";
+
+
+$DoECRequestDetails = new PayPal\EBLBaseComponents\DoExpressCheckoutPaymentRequestDetailsType();
+$DoECRequestDetails->PayerID = $this->Session->read('payerid');
+$DoECRequestDetails->Token = $this->Session->read('token');
+$DoECRequestDetails->PaymentAction = 'Sale';
+$DoECRequestDetails->OrderURL = "http://localhost/SalvatoresPizza/";
+$DoECRequestDetails->PaymentDetails = $paymentdetails->PaymentDetails;
+
+$DoECRequest = new PayPal\PayPalAPI\DoExpressCheckoutPaymentRequestType();
+$DoECRequest->DoExpressCheckoutPaymentRequestDetails = $DoECRequestDetails;
+$DoECRequest->Version = '106.0';
+
+$DoECReq = new PayPal\PayPalAPI\DoExpressCheckoutPaymentReq();
+$DoECReq->DoExpressCheckoutPaymentRequest = $DoECRequest;
+
+$DoECResponse = $paypalService->DoExpressCheckoutPayment($DoECReq);
+debug($DoECResponse);
+if($DoECResponse->Ack === 'Success'){
+ $this->Session->setFlash(__('Successfully ordered'));
+$this->redirect(array('controller' => 'menucategories', 'action' => 'home'));
+}
+else{
+ $this->Session->setFlash(__('Order could not be completed.'));
+$this->redirect(array('controller' => 'menucategories', 'action' => 'home'));
+}
+ //debug($this->Session->read('payerid') . "  A break " . $this->Session->read('token
+ //debug($paymentdetails);
+ //debug($DoECReq);
+//debug($DoECResponse);
+
         }
 }
