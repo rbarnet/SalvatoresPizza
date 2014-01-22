@@ -113,19 +113,24 @@ class OrderDetailsController extends AppController {
                 array_push($toppingstitlearray, $toppingsstring);
                 array_push($toppingssubtotalarray, $toppingssubtotal);
                 if($orderDetails[$count]['MenuItem']['title'] == 'Personal 10"'){
-                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Personal 10"')));  
+                    //$toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Personal 10"')));
+                    $toppings[$count] = 'Topping found';
                 }
                 else if($orderDetails[$count]['MenuItem']['title'] == 'Medium 14"'){
-                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Medium 14"')));
+                    //$toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Medium 14"')));
+                    $toppings[$count] = 'Topping found';
                 }
                 else if($orderDetails[$count]['MenuItem']['title'] == 'Large 16"'){
-                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Large 16"')));
+                    //$toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Large 16"')));
+                    $toppings[$count] = 'Topping found';
                 }
                 else if($orderDetails[$count]['MenuItem']['title'] == 'Extra Large 18"'){
-                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Extra Large 18"')));
+                    //$toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Extra Large 18"')));
+                    $toppings[$count] = 'Topping found';
                 }
-                else if($orderDetails[$count]['MenuItem']['title'] == 'Cheese' || $orderDetails[$count]['MenuItem']['menu_category_id'] == 5){
-                    $toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Cheese')));
+                else if($orderDetails[$count]['MenuItem']['title'] == 'Cheese' || $orderDetails[$count]['MenuItem']['menu_category_id'] == 5 || $orderDetails[$count]['MenuItem']['menu_category_id'] == 2){
+                    //$toppings[$count] = $this->Topping->find('list', array('conditions' => array('Topping.item' => 'Cheese')));
+                    $toppings[$count] = 'Topping found';
                 }
                 else{
                     $toppings[$count] = null;
