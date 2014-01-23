@@ -116,7 +116,7 @@ class OrdersController extends AppController {
 	}
         
         public function checkout($id = null){
-            require_once('F:/xampp/htdocs/SalvatoresPizza/Vendor/autoload.php');
+            require_once('F:/xampp/htdocs/SalvatoresPizza/Vendor/autoload.php');//Not sure if this necessary  
             $this->loadModel('OrderDetail');
             $this->loadModel('OrderDetailTopping');
             //We need these models loaded to work with them
@@ -198,6 +198,7 @@ class OrdersController extends AppController {
             $this->redirect('https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $setECResponse->Token);
         }
         public function checkoutcancelled(){
+            //this is just in case they hit the cancel checkout button.  nothing is actually removed from the cart  
             $this->Session->setFlash(__("Checkout cancelled."));
             $this->redirect(array('controller' => 'menucategories', 'action' => 'home'));
         }
