@@ -9,6 +9,7 @@
 			<th><?php echo $this->Paginator->sort('phone'); ?></th>
 			<th><?php echo $this->Paginator->sort('hourshtml'); ?></th>
 			<th><?php echo $this->Paginator->sort('googlemapcode'); ?></th>
+                        <th><?php echo $this->Paginator->sort('taxrate'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>-->
 	<?php foreach ($locations as $location): ?>

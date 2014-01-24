@@ -108,20 +108,26 @@ class OrderDetailsController extends AppController {
             $this->loadModel('MenuItem');
             $this->loadModel('Topping');
             //These models need to be loaded in order to view the cart.  
+            
             $usersorders = $this->Order->find('all', array(
             'conditions' => array('Order.user_id' => $userid, 'Order.location_id' => $location, 'Order.stage_id' => 1)
             ));//Find the order for this particular user associated with this particular location that is currently in the cart.  
+            $taxrate = $usersorders[0]['Location']['taxrate'];
+            $taxtotal = 0;
             $count = 0;
             //A counter.
             $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $usersorders[$count]['Order']['id'])
-            ));//Find all the items that are currently associated with this particular order.  
+            ));
+            
+            //Find all the items that are currently associated with this particular order.  
             $toppingsarray = array();
             $toppingstotal = 0;
             //The total price of the toppings associated with this particular order.  
             $toppingstitlearray = array();
             //Two arrays that are used to keep track of the title of the topping and the subtotals for the toppings.  
             $toppingssubtotalarray = array();
+            $itempricearray = array();
             //loop through all the items associated with a particular order.  Find out if any toppings are already associated with it in the order details toppings table
             while($count < count($orderDetails)){
                 $toppingsonitem = $this->OrderDetailTopping->find('all', array('conditions' => array('OrderDetailTopping.order_detail_id' => $orderDetails[$count]['OrderDetail']['id'])));
@@ -129,6 +135,7 @@ class OrderDetailsController extends AppController {
                 array_push($toppingsarray, $toppingsonitem);//Push the result of this onto the toppings array.  This may be unnecessary.  
                 $toppingsstring = '';
                 $toppingssubtotal = 0;
+                $count2 = 0;
                 //Initialize the toppingstring and set the subtotal to zero
                 foreach($toppingsonitem as $itemtoppings){
                     //For each of the toppings currently on the item add the title to the toppings string.  Add the price of the topping to the current subtotal
@@ -166,14 +173,22 @@ class OrderDetailsController extends AppController {
                 else{
                     $toppings[$count] = null;
                 }
+                $itemprice = 0;
+                $itemprice = $orderDetails[$count]['OrderDetail']['price'] + $toppingssubtotal;
+                $taxforitem = $itemprice * $taxrate;
+                //$taxrounded = round($taxforitem, 2);
+                $taxtotal += $taxforitem;
+                array_push($itempricearray, $itemprice);
                 $count++;
             }
+            $taxafterround = round($taxtotal, 2);
             $count = 0;
             //debug($toppingsarray);
             //pass the titles of the toppings and the subtotal of the toppings in respect to each item to the view
             $this->set('toppingstitlearray', $toppingstitlearray);
             $this->set('toppingsubtotalarray', $toppingssubtotalarray);
             $this->set(compact('toppings'));
+            $this->set('itempricearray', $itempricearray);
             $locations = $this->Location->find('all', array(
             'conditions' => array('id' => $location)));
             $this->set('orderDetails');
@@ -184,6 +199,7 @@ class OrderDetailsController extends AppController {
             $this->set('ordertotal', $usersorders[0]['Order']['total']);
             //Pass the total of the order without toppings and the total of the toppings to the view
             $this->set('toppingstotal', $toppingstotal);
+            $this->set('tax', $taxafterround);
             $projectedtotal = $toppingstotal + $usersorders[0]['Order']['total'];
             $this->set('projectedtotal', $projectedtotal);//Pass the projected total which adds toppingstotal to the total of the order without toppings.
         }

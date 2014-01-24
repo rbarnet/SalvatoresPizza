@@ -20,7 +20,7 @@
                 <td> <?php echo($toppingstitlearray[$count]);?></td>
 <!--		<td><?php// echo h('$ ' .  $orderDetail['OrderDetail']['price']); ?>&nbsp;</td>
                 <td><?php// echo h('$ ' .  $toppingsubtotalarray[$count]); ?>&nbsp;</td>-->
-                <td><?php $itemprice = $orderDetail['OrderDetail']['price'] + $toppingsubtotalarray[$count];   echo ('$' . $itemprice);?></td>
+                <td><?php $itemprice = $orderDetail['OrderDetail']['price'] + $toppingsubtotalarray[$count];   echo ('$' . $itempricearray[$count]);?></td>
                 
                 <td> <?php if($toppings[$count] != null){
                     ?></td>
@@ -39,6 +39,8 @@
         <?php echo("Total of Toppings Selected: $". $toppingstotal);?>
         <?php echo("<br></br>")?>
         <?php echo("Projected Total without Tax: $" .$projectedtotal)?>
+        <?php echo("<br></br>")?>
+        <?php echo("Tax: $" .$tax)?>
     </div>
     <br></br>
    <a href="/SalvatoresPizza/orders/checkout/<?php echo $orderDetails[0]['Order']['id']?>" data-paypal-button="true">

@@ -119,10 +119,14 @@ class OrdersController extends AppController {
             require_once('F:/xampp/htdocs/SalvatoresPizza/Vendor/autoload.php');//Not sure if this necessary  
             $this->loadModel('OrderDetail');
             $this->loadModel('OrderDetailTopping');
+            $this->loadModel('Location');
             //We need these models loaded to work with them
            $orderDetails = $this->OrderDetail->find('all', array(
             'conditions' => array('order_id' => $id)
             ));//find all the items associated with this particular order
+           $location = $this->Location->find('all', array('conditions' => array('id' => $orderDetails[0]['Order']['location_id'])));
+           $taxrate = $location[0]['Location']['taxrate'];
+           $taxtotal = 0;
             $toppingsarray = array();
             $toppingstotal = 0;//keeps track of the price of all the toppings associated with this order
             $toppingstitlearray = array();//keeps track of the titles of the toppings
@@ -160,7 +164,11 @@ class OrdersController extends AppController {
             $itemDetails = new PayPal\EBLBaseComponents\PaymentDetailsItemType();
             $itemDetails->Name = $orderDetails[$count]['MenuItem']['title'] . $toppingsstring;
             $itemAmount = $orderDetails[$count]['MenuItem']['price'] + $toppingssubtotal;
+            $taxforitem = $itemAmount * $taxrate;
+            //$taxrounded = round($taxforitem, 2);
+            $taxtotal += $taxforitem;
             $itemDetails->Amount = $itemAmount;
+            //$itemDetails->Tax = $taxrounded;
             $itemQuantity = '1';
             //specify the quantity of the item and put it in the quantity for the item details object
             $itemDetails->Quantity = $itemQuantity;
@@ -172,12 +180,14 @@ class OrdersController extends AppController {
             //calculate the total for the entire order
             $projectedtotal = $total;
             
-
+            $taxrounded = round($taxtotal, 2);
             $orderTotal = new \PayPal\CoreComponentTypes\BasicAmountType();
             $orderTotal->currencyID = 'USD';
-            $orderTotal->value = $projectedtotal; 
+            $orderTotal->value = $projectedtotal + $taxrounded; 
 
             $paymentDetails->OrderTotal = $orderTotal;
+            $paymentDetails->TaxTotal = $taxrounded;
+            $paymentDetails->ItemTotal = $projectedtotal;
             $paymentDetails->PaymentAction = 'Sale';
 
             $setECReqDetails = new PayPal\EBLBaseComponents\SetExpressCheckoutRequestDetailsType();
@@ -193,8 +203,8 @@ class OrdersController extends AppController {
             $setECReq->SetExpressCheckoutRequest = $setECReqType;
 
             $setECResponse = $paypalService->SetExpressCheckout($setECReq);
-            
-            debug($setECResponse->Errors);
+            //debug($setECReq);
+            //debug($setECResponse);
             $this->redirect('https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $setECResponse->Token);
         }
         public function checkoutcancelled(){

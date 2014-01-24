@@ -3039,3 +3039,110 @@ Stack Trace:
 #3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
 #4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-24 17:24:39 Error: [MissingActionException] Action OrderDetailsController::locations() could not be found.
+Exception Attributes: array (
+  'controller' => 'OrderDetailsController',
+  'action' => 'locations',
+)
+Request URL: /SalvatoresPizza/orderdetails/locations/indexbackoffice
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrderDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-24 18:15:37 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:17:49 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:20:43 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:22:16 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:23:02 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:28:10 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:28:46 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-24 18:37:06 Error: [MissingViewException] View file "F:\xampp\htdocs\SalvatoresPizza\View\Orders\checkout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'F:\\xampp\\htdocs\\SalvatoresPizza\\View\\Orders\\checkout.ctp',
+)
+Request URL: /SalvatoresPizza/orders/checkout/31
+Stack Trace:
+#0 C:\cake\cakephp-2.4.0\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\cake\cakephp-2.4.0\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\cake\cakephp-2.4.0\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\xampp\htdocs\SalvatoresPizza\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

@@ -9,6 +9,7 @@
 		echo $this->Form->input('phone');
 		echo $this->Form->input('hourshtml');
 		echo $this->Form->input('googlemapcode');
+                echo $this->Form->input('taxrate');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

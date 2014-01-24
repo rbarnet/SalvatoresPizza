@@ -36,6 +36,11 @@
 			<?php echo h($location['Location']['googlemapcode']); ?>
 			&nbsp;
 		</dd>
+                <dt><?php echo __('Tax Rate'); ?></dt>
+		<dd>
+			<?php echo h($location['Location']['taxrate']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">

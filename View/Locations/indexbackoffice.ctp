@@ -9,6 +9,7 @@
 			<th><?php echo $this->Paginator->sort('phone'); ?></th>
 			<th><?php echo $this->Paginator->sort('hourshtml'); ?></th>
 			<th><?php echo $this->Paginator->sort('googlemapcode'); ?></th>
+                        <th><?php echo $this->Paginator->sort('taxrate'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($locations as $location): ?>
@@ -20,6 +21,7 @@
 		<td><?php echo h($location['Location']['phone']); ?>&nbsp;</td>
 		<td><?php echo h($location['Location']['hourshtml']); ?>&nbsp;</td>
 		<td><?php echo h($location['Location']['googlemapcode']); ?>&nbsp;</td>
+                <td><?php echo h($location['Location']['taxrate']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $location['Location']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $location['Location']['id'])); ?>
